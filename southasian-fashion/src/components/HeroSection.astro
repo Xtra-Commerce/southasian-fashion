@@ -1,0 +1,122 @@
+---
+interface Props {
+  title: string;
+  subtitle?: string;
+  label?: string;
+  size?: 'large' | 'medium' | 'small';
+  backgroundImage?: string;
+  backgroundAlt?: string;
+  overlay?: boolean;
+}
+
+const { title, subtitle, label, size = 'medium', backgroundImage, backgroundAlt, overlay = true } = Astro.props;
+const hasImage = !!backgroundImage;
+---
+<section class:list={['hero', `hero--${size}`, { 'hero--with-image': hasImage }]}>
+  {hasImage && (
+    <div class="hero__bg">
+      <img src={backgroundImage} alt={backgroundAlt || ''} class="hero__bg-img" loading="eager" />
+      {overlay && <div class="hero__overlay" />}
+    </div>
+  )}
+  <div class="hero__inner container">
+    {label && <span class:list={['hero__label', 'label', { 'hero__label--light': hasImage }]}>{label}</span>}
+    <h1 class:list={['hero__title', size === 'large' ? 'display-xl' : 'display-lg', { 'hero__title--light': hasImage }]}>{title}</h1>
+    {subtitle && <p class:list={['hero__subtitle', { 'hero__subtitle--light': hasImage }]}>{subtitle}</p>}
+    <slot />
+  </div>
+  {!hasImage && (
+    <div class="hero__ornament">
+      <span class="ornament--double"></span>
+    </div>
+  )}
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    padding: var(--space-4xl) 0 var(--space-3xl);
+    text-align: center;
+    background: linear-gradient(180deg, var(--color-ivory) 0%, var(--color-warm-white) 100%);
+    overflow: hidden;
+  }
+
+  .hero--large {
+    padding: var(--space-5xl) 0 var(--space-4xl);
+  }
+
+  .hero--small {
+    padding: var(--space-2xl) 0 var(--space-xl);
+  }
+
+  .hero--with-image {
+    background: transparent;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero--with-image.hero--large {
+    min-height: 540px;
+  }
+
+  .hero__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .hero__bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(42,37,32,0.55) 0%, rgba(42,37,32,0.7) 100%);
+  }
+
+  .hero__inner {
+    position: relative;
+    z-index: 1;
+    max-width: 860px;
+  }
+
+  .hero__label {
+    display: inline-block;
+    margin-bottom: var(--space-lg);
+  }
+
+  .hero__label--light {
+    color: var(--color-gold-light);
+  }
+
+  .hero__title {
+    margin-bottom: var(--space-lg);
+  }
+
+  .hero__title--light {
+    color: white;
+  }
+
+  .hero__subtitle {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: var(--color-text-secondary);
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .hero__subtitle--light {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .hero__ornament {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-2xl);
+  }
+</style>

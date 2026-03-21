@@ -4,25 +4,30 @@ import HeroSection from '../components/HeroSection.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import CTABlock from '../components/CTABlock.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { getCategoryHeroImage } from '../utils/images';
 import { getCollection } from 'astro:content';
 
-const articles = (await getCollection('learn'))
+const articles = (await getCollection('sell'))
   .filter(a => !a.data.draft)
   .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
+
+const heroImage = getCategoryHeroImage('sell');
 ---
 <BaseLayout
-  title="Learn — South Asian Fashion Education & Culture"
-  description="Deep dives into South Asian fashion culture. Understand fabrics, embroidery techniques, regional styles, color symbolism, and the rich traditions behind every outfit."
+  title="Selling Guides — Sell South Asian Outfits Online"
+  description="Learn how to sell your South Asian outfits online. Pricing guides, platform comparisons, photography tips, and strategies to maximize resale value."
 >
   <div class="container">
-    <Breadcrumbs items={[{ name: 'Learn', url: '/learn' }]} />
+    <Breadcrumbs items={[{ name: 'Selling Guides', url: '/selling' }]} />
   </div>
 
   <HeroSection
-    title="Learn About South Asian Fashion"
-    subtitle="From ancient weaving traditions to modern styling, explore the rich heritage and craftsmanship that makes South Asian fashion unique."
-    label="Culture & Education"
+    title="Sell Your South Asian Outfits"
+    subtitle="Your lehenga, saree, or sherwani deserves a second life. Learn how to price, photograph, list, and sell your outfits for the best return."
+    label="Selling Guides"
     size="medium"
+    backgroundImage={heroImage.url}
+    backgroundAlt={heroImage.alt}
   />
 
   <section class="section">
@@ -40,11 +45,11 @@ const articles = (await getCollection('learn'))
           ))}
         </div>
       ) : (
-        <p style="text-align:center;color:var(--color-text-light);padding:var(--space-3xl) 0;">Educational articles coming soon.</p>
+        <p style="text-align:center;color:var(--color-text-light);padding:var(--space-3xl) 0;">Selling guides coming soon.</p>
       )}
 
       <div style="margin-top:var(--space-3xl);">
-        <CTABlock type="general" variant="light" />
+        <CTABlock type="sell" variant="dark" />
       </div>
     </div>
   </section>

@@ -462,7 +462,7 @@ Fall: Traditional
 
 ## Part 8: Pricing on PurvX for Saree Excellence
 
-**PurvX (at [PurvX.com](https://purvx.com) and [PurvX.in](https://purvx.in)) offers distinct advantages for saree sales:**
+**PurvX (at [PurvX.com](https://www.purvx.com) and [PurvX.in](https://purvx.in)) offers distinct advantages for saree sales:**
 
 1. **Specialized audience** understands handloom authentication and regional varieties
 2. **Premium pricing** achieved for traditional sarees (15-25% higher than general platforms)

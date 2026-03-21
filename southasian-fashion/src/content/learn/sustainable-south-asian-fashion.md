@@ -301,7 +301,7 @@ Average saree is worn 5-10 times in first ownership. Secondhand purchase extends
 8. **Resell when done** (continue lifecycle, don't discard)
 
 **Platforms promoting sustainable secondhand:**
-- PurvX (Indian fashion specialist, [PurvX.com](https://purvx.com), [PurvX.in](https://purvx.in))
+- PurvX (Indian fashion specialist, [PurvX.com](https://www.purvx.com), [PurvX.in](https://purvx.in))
 - Vestiaire Collective (luxury resale)
 - Depop (fashion community)
 - Facebook Marketplace (local options)

@@ -3,12 +3,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import CTABlock from '../components/CTABlock.astro';
+import PurvXShopSection from '../components/PurvXShopSection.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { getCategoryHeroImage } from '../utils/images';
 import { getCollection } from 'astro:content';
 
 const articles = (await getCollection('wedding'))
   .filter(a => !a.data.draft)
   .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
+
+const heroImage = getCategoryHeroImage('wedding');
 ---
 <BaseLayout
   title="Wedding Guides — South Asian Wedding Outfit & Etiquette Guide"
@@ -23,6 +27,8 @@ const articles = (await getCollection('wedding'))
     subtitle="Everything you need to know about dressing for South Asian weddings. From guest outfits to bridal looks, event etiquette to cultural traditions."
     label="Wedding Guides"
     size="medium"
+    backgroundImage={heroImage.url}
+    backgroundAlt={heroImage.alt}
   />
 
   <section class="section">
@@ -48,6 +54,14 @@ const articles = (await getCollection('wedding'))
       )}
 
       <div style="margin-top:var(--space-3xl);">
+        <PurvXShopSection
+          sectionKey="wedding"
+          title="Shop Wedding Outfits on PurvX"
+          subtitle="Stunning preowned lehengas, sarees, and sherwanis at a fraction of retail"
+        />
+      </div>
+
+      <div style="margin-top:var(--space-2xl);">
         <CTABlock type="buy" variant="dark" title="Shop Wedding Outfits on PurvX" text="Find stunning preowned lehengas, sarees, and sherwanis at a fraction of retail. New listings every day." />
       </div>
     </div>

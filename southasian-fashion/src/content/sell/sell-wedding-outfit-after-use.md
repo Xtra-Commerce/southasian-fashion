@@ -259,7 +259,7 @@ Final: $468 (78% retention for handloom)
 | **Instagram DMs** | Direct sales | Best (highest margin) | Personal network | 15-30 days |
 | **Vestiaire Collective** | Luxury/designer | Best for premium (60-75%) | Affluent, European | 35-50 days |
 
-**PurvX advantage:** [PurvX.com](https://purvx.com) and [PurvX.in](https://purvx.in) audiences specifically seek wedding wear and understand premium pricing for Indian textiles. You'll achieve 15-20% higher prices than generic platforms for designer and handloom pieces.
+**PurvX advantage:** [PurvX.com](https://www.purvx.com) and [PurvX.in](https://purvx.in) audiences specifically seek wedding wear and understand premium pricing for Indian textiles. You'll achieve 15-20% higher prices than generic platforms for designer and handloom pieces.
 
 ### Listing Strategy for Wedding Outfits
 

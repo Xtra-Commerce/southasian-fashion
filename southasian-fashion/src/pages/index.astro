@@ -3,7 +3,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import CTABlock from '../components/CTABlock.astro';
+import PurvXShopSection from '../components/PurvXShopSection.astro';
+import { getHomepageHeroImage } from '../utils/images';
 import { getCollection } from 'astro:content';
+
+const heroImage = getHomepageHeroImage(1600, 800);
 
 const allCollections = await Promise.all([
   getCollection('buy'),
@@ -30,6 +34,8 @@ const learnArticles = allArticles.filter(a => a.data.category === 'learn').slice
     subtitle="Expert guides for buying, wearing, and selling South Asian outfits. From wedding lehengas to everyday sarees, make confident fashion decisions."
     label="SouthAsian.Fashion"
     size="large"
+    backgroundImage={heroImage.url}
+    backgroundAlt={heroImage.alt}
   >
     <div class="hero-actions" style="margin-top:2rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
       <a href="/wedding-guides" class="btn btn--burgundy">Wedding Guides <span class="arrow">&rarr;</span></a>
@@ -194,6 +200,27 @@ const learnArticles = allArticles.filter(a => a.data.category === 'learn').slice
       </div>
     </section>
   )}
+
+  <!-- Shop PurvX Sections -->
+  <section class="section">
+    <div class="container">
+      <PurvXShopSection
+        sectionKey="wedding"
+        title="Shop Wedding Outfits on PurvX"
+        subtitle="Stunning lehengas, sarees, and sherwanis — preowned luxury at a fraction of retail"
+      />
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--color-ivory);">
+    <div class="container">
+      <PurvXShopSection
+        sectionKey="saree"
+        title="Browse Saree Collections"
+        subtitle="From Banarasi silk to Kanjivaram — find your perfect saree"
+      />
+    </div>
+  </section>
 
   <!-- Bottom CTA -->
   <section class="section--sm">

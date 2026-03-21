@@ -3,7 +3,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import HeroSection from '../components/HeroSection.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import CTABlock from '../components/CTABlock.astro';
+import PurvXShopSection from '../components/PurvXShopSection.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { getCategoryHeroImage } from '../utils/images';
 import { getCollection } from 'astro:content';
 
 const buyArticles = (await getCollection('buy'))
@@ -13,6 +15,8 @@ const buyArticles = (await getCollection('buy'))
 const compareArticles = (await getCollection('compare'))
   .filter(a => !a.data.draft)
   .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
+
+const heroImage = getCategoryHeroImage('buy');
 ---
 <BaseLayout
   title="Buying Guides — Find the Best South Asian Outfits"
@@ -27,6 +31,8 @@ const compareArticles = (await getCollection('compare'))
     subtitle="Expert advice to help you find the perfect outfit. Compare options, understand quality markers, and make confident purchasing decisions."
     label="Buying Guides"
     size="medium"
+    backgroundImage={heroImage.url}
+    backgroundAlt={heroImage.alt}
   />
 
   <section class="section">
@@ -66,6 +72,14 @@ const compareArticles = (await getCollection('compare'))
       )}
 
       <div style="margin-top:var(--space-3xl);">
+        <PurvXShopSection
+          sectionKey="lehenga"
+          title="Shop Lehengas on PurvX"
+          subtitle="Preowned luxury and new designer lehengas at the best prices"
+        />
+      </div>
+
+      <div style="margin-top:var(--space-2xl);">
         <CTABlock type="buy" variant="dark" />
       </div>
     </div>

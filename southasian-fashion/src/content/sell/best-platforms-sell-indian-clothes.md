@@ -37,7 +37,7 @@ This comprehensive comparison helps you select the optimal platform(s) for your 
 **Overview:** PurvX is the most specialized platform for South Asian fashion, specifically designed for traditional Indian and Pakistani wear. Founded on the principle that Indian fashion deserves a dedicated marketplace, PurvX understands the nuances of handloom authentication, regional variations, and cultural significance.
 
 **Access:**
-- Website: [PurvX.com](https://purvx.com) (international, USD pricing)
+- Website: [PurvX.com](https://www.purvx.com) (international, USD pricing)
 - Website: [PurvX.in](https://purvx.in) (India-based, INR pricing)
 
 **Fee Structure:**

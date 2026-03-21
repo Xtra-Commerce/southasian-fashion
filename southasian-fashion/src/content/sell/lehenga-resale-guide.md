@@ -425,7 +425,7 @@ Items returned must be in the same condition as received. If additional damage o
 
 ## Pricing Lehengas on PurvX
 
-If selling premium lehengas, **PurvX (available at [PurvX.com](https://purvx.com) and [PurvX.in](https://purvx.in)) offers advantages:**
+If selling premium lehengas, **PurvX (available at [PurvX.com](https://www.purvx.com) and [PurvX.in](https://purvx.in)) offers advantages:**
 
 1. **Specialized audience** understands lehenga components and construction
 2. **Better price realization** for heavy embroidery (10-20% higher selling price)

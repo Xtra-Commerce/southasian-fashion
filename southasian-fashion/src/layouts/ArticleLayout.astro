@@ -4,8 +4,11 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import CTABlock from '../components/CTABlock.astro';
 import FAQSection from '../components/FAQSection.astro';
 import RelatedArticles from '../components/RelatedArticles.astro';
+import InlineArticleImages from '../components/InlineArticleImages.astro';
+import PurvXShopSection from '../components/PurvXShopSection.astro';
 import { generateArticleSchema } from '../utils/schema';
 import { getCategoryPath } from '../utils/links';
+import { getArticleHeroImage, getArticleInlineImages } from '../utils/images';
 import { getCollection } from 'astro:content';
 
 interface Props {
@@ -31,7 +34,7 @@ const categoryLabels: Record<string, string> = {
   'compare': 'Comparisons',
 };
 
-const slug = Astro.url.pathname.split('/').pop() || '';
+const slug = Astro.url.pathname.split('/').filter(Boolean).pop() || '';
 
 const schema = generateArticleSchema({
   title: frontmatter.title,
@@ -42,6 +45,17 @@ const schema = generateArticleSchema({
   updatedDate: frontmatter.updatedDate,
   tags: frontmatter.tags,
 });
+
+const heroImage = getArticleHeroImage(slug, 1200, 600);
+const inlineImageGroups = getArticleInlineImages(slug);
+
+// Determine PurvX shop section to show based on article category/tags
+const shopSectionKey = frontmatter.category === 'wedding' ? 'wedding' :
+  frontmatter.tags?.some((t: string) => t.includes('lehenga')) ? 'lehenga' :
+  frontmatter.tags?.some((t: string) => t.includes('saree')) ? 'saree' :
+  frontmatter.tags?.some((t: string) => ['sherwani', 'kurta', 'men'].some(k => t.includes(k))) ? 'mens' :
+  frontmatter.category === 'buy' || frontmatter.category === 'compare' ? 'saree' :
+  null;
 
 const ctaType = ['buy', 'compare'].includes(frontmatter.category) ? 'buy' :
                 frontmatter.category === 'sell' ? 'sell' : 'general';
@@ -100,11 +114,39 @@ const related = allArticles
         </div>
       </header>
 
+      <div class="article__hero-image">
+        <img src={heroImage.url} alt={heroImage.alt} width="1200" height="600" loading="eager" />
+      </div>
+
+      {/* First image group — before the content starts */}
+      {inlineImageGroups.length > 0 && (
+        <InlineArticleImages images={inlineImageGroups[0]} />
+      )}
+
       <div class="prose">
         <slot />
-
-        <CTABlock type={ctaType as 'buy' | 'sell' | 'general'} variant="light" country={frontmatter.country} tags={frontmatter.tags} />
       </div>
+
+      {/* Second image group — after the prose, before mid CTA */}
+      {inlineImageGroups.length > 1 && (
+        <InlineArticleImages images={inlineImageGroups[1]} />
+      )}
+
+      <CTABlock type={ctaType as 'buy' | 'sell' | 'general'} variant="light" country={frontmatter.country} tags={frontmatter.tags} />
+
+      {/* Third image group — after mid CTA */}
+      {inlineImageGroups.length > 2 && (
+        <InlineArticleImages images={inlineImageGroups[2]} />
+      )}
+
+      {/* PurvX Shop Section */}
+      {shopSectionKey && (
+        <PurvXShopSection
+          sectionKey={shopSectionKey}
+          title={`Shop ${shopSectionKey === 'wedding' ? 'Wedding Outfits' : shopSectionKey === 'lehenga' ? 'Lehengas' : shopSectionKey === 'saree' ? 'Sarees' : shopSectionKey === 'mens' ? "Men's Outfits" : 'Outfits'} on PurvX`}
+          country={frontmatter.country}
+        />
+      )}
 
       {faqs.length > 0 && <FAQSection faqs={faqs} />}
 
@@ -148,5 +190,19 @@ const related = allArticles
   .article__meta {
     font-size: 0.85rem;
     color: var(--color-text-light);
+  }
+
+  .article__hero-image {
+    margin-bottom: var(--space-3xl);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+  }
+
+  .article__hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 2/1;
+    object-fit: cover;
   }
 </style>

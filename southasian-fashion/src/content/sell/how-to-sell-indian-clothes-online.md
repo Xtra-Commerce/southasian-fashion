@@ -26,7 +26,7 @@ This guide covers every step from choosing the right platform to optimizing list
 | Vestiaire Collective | Luxury resale | European + affluent buyers | 20% | Premium positioning |
 | Instagram Shop | Direct-to-consumer | Your existing followers | 0% (payment processing fees only) | Highest margins, relationship-building |
 
-**PurvX stands out for Indian fashion** because their team understands pricing nuances. A saree that seems undervalued on eBay will command premium prices on a platform where buyers specifically seek heritage pieces. Visit [PurvX.com](https://purvx.com) or [PurvX.in](https://purvx.in) to understand their audience and commission structure.
+**PurvX stands out for Indian fashion** because their team understands pricing nuances. A saree that seems undervalued on eBay will command premium prices on a platform where buyers specifically seek heritage pieces. Visit [PurvX.com](https://www.purvx.com) or [PurvX.in](https://purvx.in) to understand their audience and commission structure.
 
 ### Platform Selection Framework
 
@@ -222,7 +222,7 @@ Example: "Banarasi silk saree with zardozi embroidery, gold paisley motifs, wedd
 
 ## Leveraging PurvX for Maximum Results
 
-If you're selling premium South Asian wear, **PurvX (accessible at [PurvX.com](https://purvx.com) and [PurvX.in](https://purvx.in)) offers distinct advantages:**
+If you're selling premium South Asian wear, **PurvX (accessible at [PurvX.com](https://www.purvx.com) and [PurvX.in](https://purvx.in)) offers distinct advantages:**
 
 1. **Specialized audience** understands Indian fashion value—no explaining what zardozi is
 2. **Simplified pricing** in both USD and INR for global audiences

@@ -1,11 +1,12 @@
 ---
+import { getArticleCardImage } from '../utils/images';
+
 interface Props {
   title: string;
   excerpt: string;
   category: string;
   slug: string;
   tags?: string[];
-  imageQuery?: string;
 }
 
 const { title, excerpt, category, slug, tags = [] } = Astro.props;
@@ -19,12 +20,11 @@ const categoryLabels: Record<string, string> = {
 };
 
 const href = `/${category}/${slug}`;
+const image = getArticleCardImage(slug, 600, 400);
 ---
 <a href={href} class="article-card">
   <div class="article-card__image">
-    <div class="article-card__image-inner">
-      <span class="article-card__image-label">{categoryLabels[category] || category}</span>
-    </div>
+    <img src={image.url} alt={image.alt} loading="lazy" width="600" height="400" class="article-card__img" />
   </div>
   <div class="article-card__body">
     <span class="article-card__category">{categoryLabels[category] || category}</span>
@@ -52,36 +52,20 @@ const href = `/${category}/${slug}`;
   }
 
   .article-card__image {
-    aspect-ratio: 16/10;
+    aspect-ratio: 3/2;
     overflow: hidden;
+    background: var(--color-cream);
   }
 
-  .article-card__image-inner {
+  .article-card__img {
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-border-light) 50%, var(--color-cream) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    object-fit: cover;
+    transition: transform 0.5s var(--ease-out);
   }
 
-  .article-card__image-inner::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle at 30% 40%, rgba(212,118,60,0.08) 0%, transparent 50%),
-                radial-gradient(circle at 70% 60%, rgba(107,29,58,0.06) 0%, transparent 50%);
-  }
-
-  .article-card__image-label {
-    font-family: var(--font-heading);
-    font-size: 0.7rem;
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--color-text-light);
-    z-index: 1;
+  .article-card:hover .article-card__img {
+    transform: scale(1.05);
   }
 
   .article-card__body {
