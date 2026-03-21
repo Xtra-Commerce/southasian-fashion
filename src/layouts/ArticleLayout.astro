@@ -1,0 +1,152 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import CTABlock from '../components/CTABlock.astro';
+import FAQSection from '../components/FAQSection.astro';
+import RelatedArticles from '../components/RelatedArticles.astro';
+import { generateArticleSchema } from '../utils/schema';
+import { getCategoryPath } from '../utils/links';
+import { getCollection } from 'astro:content';
+
+interface Props {
+  frontmatter: {
+    title: string;
+    description: string;
+    category: string;
+    tags: string[];
+    country?: string;
+    publishDate: string;
+    updatedDate?: string;
+  };
+  faqs?: { question: string; answer: string }[];
+}
+
+const { frontmatter, faqs = [] } = Astro.props;
+
+const categoryLabels: Record<string, string> = {
+  'buy': 'Buying Guides',
+  'sell': 'Selling Guides',
+  'wedding': 'Wedding Guides',
+  'learn': 'Learn',
+  'compare': 'Comparisons',
+};
+
+const slug = Astro.url.pathname.split('/').pop() || '';
+
+const schema = generateArticleSchema({
+  title: frontmatter.title,
+  description: frontmatter.description,
+  slug,
+  category: frontmatter.category,
+  publishDate: frontmatter.publishDate,
+  updatedDate: frontmatter.updatedDate,
+  tags: frontmatter.tags,
+});
+
+const ctaType = ['buy', 'compare'].includes(frontmatter.category) ? 'buy' :
+                frontmatter.category === 'sell' ? 'sell' : 'general';
+
+// Get related articles
+const allCollections = await Promise.all([
+  getCollection('buy'),
+  getCollection('sell'),
+  getCollection('wedding'),
+  getCollection('learn'),
+  getCollection('compare'),
+]);
+
+const allArticles = allCollections.flat().filter(a => !a.data.draft);
+
+const currentTags = frontmatter.tags || [];
+const related = allArticles
+  .filter(a => a.id !== slug)
+  .map(a => {
+    let score = 0;
+    if (a.data.category === frontmatter.category) score += 2;
+    const commonTags = (a.data.tags || []).filter((t: string) => currentTags.includes(t));
+    score += commonTags.length * 1.5;
+    return { article: a, score };
+  })
+  .filter(({ score }) => score > 0)
+  .sort((a, b) => b.score - a.score)
+  .slice(0, 4)
+  .map(({ article }) => ({
+    slug: article.id,
+    title: article.data.title,
+    excerpt: article.data.description,
+    category: article.data.category,
+    tags: article.data.tags,
+  }));
+---
+<BaseLayout title={frontmatter.title} description={frontmatter.description} schema={schema}>
+  <article class="article">
+    <div class="container container--narrow">
+      <Breadcrumbs items={[
+        { name: categoryLabels[frontmatter.category] || frontmatter.category, url: getCategoryPath(frontmatter.category) },
+        { name: frontmatter.title, url: Astro.url.pathname },
+      ]} />
+
+      <header class="article__header">
+        <span class="label">{categoryLabels[frontmatter.category]}</span>
+        <h1 class="article__title">{frontmatter.title}</h1>
+        <p class="article__intro">{frontmatter.description}</p>
+        <div class="article__meta">
+          <time datetime={frontmatter.publishDate}>
+            {new Date(frontmatter.publishDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+          </time>
+          {frontmatter.updatedDate && (
+            <span> · Updated {new Date(frontmatter.updatedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+          )}
+        </div>
+      </header>
+
+      <div class="prose">
+        <slot />
+
+        <CTABlock type={ctaType as 'buy' | 'sell' | 'general'} variant="light" country={frontmatter.country} tags={frontmatter.tags} />
+      </div>
+
+      {faqs.length > 0 && <FAQSection faqs={faqs} />}
+
+      <CTABlock type={ctaType as 'buy' | 'sell' | 'general'} variant="dark" country={frontmatter.country} tags={frontmatter.tags} />
+
+      <RelatedArticles articles={related} />
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .article {
+    padding-bottom: var(--space-4xl);
+  }
+
+  .article__header {
+    text-align: center;
+    padding: var(--space-2xl) 0 var(--space-3xl);
+    border-bottom: 1px solid var(--color-border-light);
+    margin-bottom: var(--space-3xl);
+  }
+
+  .article__title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 400;
+    line-height: 1.15;
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-lg);
+    color: var(--color-charcoal);
+  }
+
+  .article__intro {
+    font-size: 1.15rem;
+    color: var(--color-text-secondary);
+    max-width: 600px;
+    margin: 0 auto var(--space-lg);
+    line-height: 1.7;
+  }
+
+  .article__meta {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+  }
+</style>

@@ -1,0 +1,139 @@
+---
+interface Props {
+  title: string;
+  excerpt: string;
+  category: string;
+  slug: string;
+  tags?: string[];
+  imageQuery?: string;
+}
+
+const { title, excerpt, category, slug, tags = [] } = Astro.props;
+
+const categoryLabels: Record<string, string> = {
+  'buy': 'Buying Guide',
+  'sell': 'Selling Guide',
+  'wedding': 'Wedding Guide',
+  'learn': 'Culture & Style',
+  'compare': 'Comparison',
+};
+
+const href = `/${category}/${slug}`;
+---
+<a href={href} class="article-card">
+  <div class="article-card__image">
+    <div class="article-card__image-inner">
+      <span class="article-card__image-label">{categoryLabels[category] || category}</span>
+    </div>
+  </div>
+  <div class="article-card__body">
+    <span class="article-card__category">{categoryLabels[category] || category}</span>
+    <h3 class="article-card__title">{title}</h3>
+    <p class="article-card__excerpt">{excerpt}</p>
+    <span class="article-card__read-more">Read guide <span class="arrow">&rarr;</span></span>
+  </div>
+</a>
+
+<style>
+  .article-card {
+    display: block;
+    background: white;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: all var(--duration-normal) var(--ease-out);
+    text-decoration: none;
+    border: 1px solid var(--color-border-light);
+  }
+
+  .article-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-3px);
+    border-color: transparent;
+  }
+
+  .article-card__image {
+    aspect-ratio: 16/10;
+    overflow: hidden;
+  }
+
+  .article-card__image-inner {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-border-light) 50%, var(--color-cream) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .article-card__image-inner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 40%, rgba(212,118,60,0.08) 0%, transparent 50%),
+                radial-gradient(circle at 70% 60%, rgba(107,29,58,0.06) 0%, transparent 50%);
+  }
+
+  .article-card__image-label {
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-text-light);
+    z-index: 1;
+  }
+
+  .article-card__body {
+    padding: var(--space-lg) var(--space-lg) var(--space-xl);
+  }
+
+  .article-card__category {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-saffron);
+    margin-bottom: var(--space-sm);
+  }
+
+  .article-card__title {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-sm);
+  }
+
+  .article-card__excerpt {
+    font-size: 0.88rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--space-md);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .article-card__read-more {
+    font-family: var(--font-heading);
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--color-saffron);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  .article-card:hover .article-card__read-more .arrow {
+    transform: translateX(4px);
+  }
+
+  .article-card__read-more .arrow {
+    transition: transform var(--duration-normal) var(--ease-out);
+  }
+</style>

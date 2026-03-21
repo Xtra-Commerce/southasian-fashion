@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import CTABlock from '../components/CTABlock.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+
+const articles = (await getCollection('learn'))
+  .filter(a => !a.data.draft)
+  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
+---
+<BaseLayout
+  title="Learn — South Asian Fashion Education & Culture"
+  description="Deep dives into South Asian fashion culture. Understand fabrics, embroidery techniques, regional styles, color symbolism, and the rich traditions behind every outfit."
+>
+  <div class="container">
+    <Breadcrumbs items={[{ name: 'Learn', url: '/learn' }]} />
+  </div>
+
+  <HeroSection
+    title="Learn About South Asian Fashion"
+    subtitle="From ancient weaving traditions to modern styling, explore the rich heritage and craftsmanship that makes South Asian fashion unique."
+    label="Culture & Education"
+    size="medium"
+  />
+
+  <section class="section">
+    <div class="container">
+      {articles.length > 0 ? (
+        <div class="grid grid--3">
+          {articles.map(article => (
+            <ArticleCard
+              title={article.data.title}
+              excerpt={article.data.description}
+              category={article.data.category}
+              slug={article.id}
+              tags={article.data.tags}
+            />
+          ))}
+        </div>
+      ) : (
+        <p style="text-align:center;color:var(--color-text-light);padding:var(--space-3xl) 0;">Educational articles coming soon.</p>
+      )}
+
+      <div style="margin-top:var(--space-3xl);">
+        <CTABlock type="general" variant="light" />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

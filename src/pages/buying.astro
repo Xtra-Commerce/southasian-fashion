@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import CTABlock from '../components/CTABlock.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+
+const buyArticles = (await getCollection('buy'))
+  .filter(a => !a.data.draft)
+  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
+
+const compareArticles = (await getCollection('compare'))
+  .filter(a => !a.data.draft)
+  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
+---
+<BaseLayout
+  title="Buying Guides — Find the Best South Asian Outfits"
+  description="Expert buying guides for lehengas, sarees, sherwanis, kurtas, and more. Compare options, understand quality, and shop confidently."
+>
+  <div class="container">
+    <Breadcrumbs items={[{ name: 'Buying Guides', url: '/buying' }]} />
+  </div>
+
+  <HeroSection
+    title="South Asian Fashion Buying Guides"
+    subtitle="Expert advice to help you find the perfect outfit. Compare options, understand quality markers, and make confident purchasing decisions."
+    label="Buying Guides"
+    size="medium"
+  />
+
+  <section class="section">
+    <div class="container">
+      {buyArticles.length > 0 && (
+        <>
+          <h2 style="font-family:var(--font-display);font-weight:400;margin-bottom:var(--space-2xl);">Outfit Buying Guides</h2>
+          <div class="grid grid--3">
+            {buyArticles.map(article => (
+              <ArticleCard
+                title={article.data.title}
+                excerpt={article.data.description}
+                category={article.data.category}
+                slug={article.id}
+                tags={article.data.tags}
+              />
+            ))}
+          </div>
+        </>
+      )}
+
+      {compareArticles.length > 0 && (
+        <div style="margin-top:var(--space-3xl);">
+          <h2 style="font-family:var(--font-display);font-weight:400;margin-bottom:var(--space-2xl);">Comparisons</h2>
+          <div class="grid grid--3">
+            {compareArticles.map(article => (
+              <ArticleCard
+                title={article.data.title}
+                excerpt={article.data.description}
+                category={article.data.category}
+                slug={article.id}
+                tags={article.data.tags}
+              />
+            ))}
+          </div>
+        </div>
+      )}
+
+      <div style="margin-top:var(--space-3xl);">
+        <CTABlock type="buy" variant="dark" />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,288 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import CTABlock from '../components/CTABlock.astro';
+import { getCollection } from 'astro:content';
+
+const allCollections = await Promise.all([
+  getCollection('buy'),
+  getCollection('sell'),
+  getCollection('wedding'),
+  getCollection('learn'),
+  getCollection('compare'),
+]);
+
+const allArticles = allCollections.flat()
+  .filter(a => !a.data.draft)
+  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
+
+const featured = allArticles.filter(a => a.data.featured).slice(0, 3);
+const weddingGuides = allArticles.filter(a => a.data.category === 'wedding').slice(0, 4);
+const buyingGuides = allArticles.filter(a => a.data.category === 'buy').slice(0, 4);
+const sellingGuides = allArticles.filter(a => a.data.category === 'sell').slice(0, 3);
+const learnArticles = allArticles.filter(a => a.data.category === 'learn').slice(0, 4);
+---
+<BaseLayout title="Home">
+  <!-- Hero -->
+  <HeroSection
+    title="The Authority on South Asian Fashion"
+    subtitle="Expert guides for buying, wearing, and selling South Asian outfits. From wedding lehengas to everyday sarees, make confident fashion decisions."
+    label="SouthAsian.Fashion"
+    size="large"
+  >
+    <div class="hero-actions" style="margin-top:2rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="/wedding-guides" class="btn btn--burgundy">Wedding Guides <span class="arrow">&rarr;</span></a>
+      <a href="/buying" class="btn btn--outline">Start Shopping <span class="arrow">&rarr;</span></a>
+    </div>
+  </HeroSection>
+
+  <!-- Featured Guides -->
+  {featured.length > 0 && (
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="label">Editor's Picks</span>
+          <h2 class="section-header__title">Featured Guides</h2>
+        </div>
+        <div class="grid grid--3">
+          {featured.map(article => (
+            <ArticleCard
+              title={article.data.title}
+              excerpt={article.data.description}
+              category={article.data.category}
+              slug={article.id}
+              tags={article.data.tags}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Category Navigation -->
+  <section class="section categories-section">
+    <div class="container">
+      <div class="section-header" style="text-align:center;">
+        <span class="label">Explore</span>
+        <h2 class="section-header__title">Find What You Need</h2>
+      </div>
+      <div class="categories-grid">
+        <a href="/wedding-guides" class="category-tile category-tile--wedding">
+          <span class="category-tile__icon">&#10022;</span>
+          <h3 class="category-tile__title">Wedding Guides</h3>
+          <p class="category-tile__text">What to wear, event guides, and cultural tips for South Asian weddings</p>
+        </a>
+        <a href="/buying" class="category-tile category-tile--buy">
+          <span class="category-tile__icon">&#9830;</span>
+          <h3 class="category-tile__title">Buying Guides</h3>
+          <p class="category-tile__text">Find the perfect lehenga, saree, sherwani, or kurta with expert advice</p>
+        </a>
+        <a href="/selling" class="category-tile category-tile--sell">
+          <span class="category-tile__icon">&#9733;</span>
+          <h3 class="category-tile__title">Selling Guides</h3>
+          <p class="category-tile__text">Sell your outfits, understand resale value, and find the right platforms</p>
+        </a>
+        <a href="/learn" class="category-tile category-tile--learn">
+          <span class="category-tile__icon">&#10047;</span>
+          <h3 class="category-tile__title">Learn & Discover</h3>
+          <p class="category-tile__text">Fabrics, embroidery, regional styles, and the rich history of South Asian fashion</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wedding Guides -->
+  {weddingGuides.length > 0 && (
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="label">Wedding Season</span>
+          <h2 class="section-header__title">Wedding Guides</h2>
+          <a href="/wedding-guides" class="btn btn--ghost">View all <span class="arrow">&rarr;</span></a>
+        </div>
+        <div class="grid grid--4">
+          {weddingGuides.map(article => (
+            <ArticleCard
+              title={article.data.title}
+              excerpt={article.data.description}
+              category={article.data.category}
+              slug={article.id}
+              tags={article.data.tags}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Mid-page CTA -->
+  <section class="section--sm">
+    <div class="container container--narrow">
+      <CTABlock type="buy" variant="dark" />
+    </div>
+  </section>
+
+  <!-- Buying Guides -->
+  {buyingGuides.length > 0 && (
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="label">Shopping</span>
+          <h2 class="section-header__title">Buying Guides</h2>
+          <a href="/buying" class="btn btn--ghost">View all <span class="arrow">&rarr;</span></a>
+        </div>
+        <div class="grid grid--4">
+          {buyingGuides.map(article => (
+            <ArticleCard
+              title={article.data.title}
+              excerpt={article.data.description}
+              category={article.data.category}
+              slug={article.id}
+              tags={article.data.tags}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Selling Guides -->
+  {sellingGuides.length > 0 && (
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="label">Resale & Sustainability</span>
+          <h2 class="section-header__title">Selling Guides</h2>
+          <a href="/selling" class="btn btn--ghost">View all <span class="arrow">&rarr;</span></a>
+        </div>
+        <div class="grid grid--3">
+          {sellingGuides.map(article => (
+            <ArticleCard
+              title={article.data.title}
+              excerpt={article.data.description}
+              category={article.data.category}
+              slug={article.id}
+              tags={article.data.tags}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Learn -->
+  {learnArticles.length > 0 && (
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="label">Culture & Education</span>
+          <h2 class="section-header__title">Learn About South Asian Fashion</h2>
+          <a href="/learn" class="btn btn--ghost">View all <span class="arrow">&rarr;</span></a>
+        </div>
+        <div class="grid grid--4">
+          {learnArticles.map(article => (
+            <ArticleCard
+              title={article.data.title}
+              excerpt={article.data.description}
+              category={article.data.category}
+              slug={article.id}
+              tags={article.data.tags}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Bottom CTA -->
+  <section class="section--sm">
+    <div class="container container--narrow">
+      <CTABlock type="sell" variant="light" />
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .section-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--space-md);
+    margin-bottom: var(--space-2xl);
+  }
+
+  .section-header .label {
+    width: 100%;
+  }
+
+  .section-header__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 400;
+    flex: 1;
+  }
+
+  .categories-section {
+    background: var(--color-ivory);
+  }
+
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+  }
+
+  .category-tile {
+    display: block;
+    background: white;
+    padding: var(--space-2xl) var(--space-xl);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border-light);
+    text-align: center;
+    text-decoration: none;
+    transition: all var(--duration-normal) var(--ease-out);
+  }
+
+  .category-tile:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: transparent;
+  }
+
+  .category-tile__icon {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: var(--space-md);
+    color: var(--color-saffron);
+  }
+
+  .category-tile--wedding .category-tile__icon { color: var(--color-deep-burgundy); }
+  .category-tile--buy .category-tile__icon { color: var(--color-gold); }
+  .category-tile--sell .category-tile__icon { color: var(--color-saffron); }
+  .category-tile--learn .category-tile__icon { color: var(--color-medium-brown); }
+
+  .category-tile__title {
+    font-size: 1.1rem;
+    margin-bottom: var(--space-sm);
+    color: var(--color-charcoal);
+  }
+
+  .category-tile__text {
+    font-size: 0.88rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+  }
+
+  @media (max-width: 1024px) {
+    .categories-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .categories-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

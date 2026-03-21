@@ -1,0 +1,29 @@
+---
+import { generateBreadcrumbSchema } from '../utils/schema';
+
+interface BreadcrumbItem {
+  name: string;
+  url: string;
+}
+
+interface Props {
+  items: BreadcrumbItem[];
+}
+
+const { items } = Astro.props;
+const allItems = [{ name: 'Home', url: '/' }, ...items];
+const schema = generateBreadcrumbSchema(allItems);
+---
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  {allItems.map((item, i) => (
+    <>
+      {i > 0 && <span class="breadcrumbs__sep">/</span>}
+      {i === allItems.length - 1 ? (
+        <span aria-current="page">{item.name}</span>
+      ) : (
+        <a href={item.url}>{item.name}</a>
+      )}
+    </>
+  ))}
+</nav>

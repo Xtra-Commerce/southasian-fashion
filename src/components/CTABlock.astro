@@ -1,0 +1,48 @@
+---
+import { getPurvXBuyLink, getPurvXSellLink } from '../utils/geo';
+
+interface Props {
+  type?: 'buy' | 'sell' | 'general';
+  variant?: 'light' | 'dark';
+  country?: string;
+  tags?: string[];
+  title?: string;
+  text?: string;
+}
+
+const { type = 'general', variant = 'light', country, tags = [], title, text } = Astro.props;
+
+const context = { country, tags };
+
+const defaults = {
+  buy: {
+    title: 'Ready to Find Your Perfect Outfit?',
+    text: 'Browse thousands of preowned and new South Asian outfits on PurvX. Find lehengas, sarees, sherwanis, and more at the best prices.',
+    link: getPurvXBuyLink(context),
+    linkText: 'Browse on PurvX',
+  },
+  sell: {
+    title: 'Sell Your Outfit After Wearing It Once',
+    text: 'Give your beautiful outfit a second life. List on PurvX to reach buyers worldwide. Most outfits sell within 14 days.',
+    link: getPurvXSellLink(context),
+    linkText: 'Start Selling on PurvX',
+  },
+  general: {
+    title: 'Discover South Asian Fashion on PurvX',
+    text: 'Whether you\'re buying or selling, PurvX is the leading marketplace for South Asian fashion. Shop preowned luxury, list your outfits, and join a community that values sustainable style.',
+    link: getPurvXBuyLink(context),
+    linkText: 'Visit PurvX',
+  },
+};
+
+const config = defaults[type];
+const finalTitle = title || config.title;
+const finalText = text || config.text;
+---
+<div class:list={['cta-block', { 'cta-block--burgundy': variant === 'dark' }]}>
+  <p class="cta-block__title">{finalTitle}</p>
+  <p class="cta-block__text">{finalText}</p>
+  <a href={config.link} target="_blank" rel="noopener" class:list={['btn', variant === 'dark' ? 'btn--primary' : 'btn--burgundy']}>
+    {config.linkText} <span class="arrow">&rarr;</span>
+  </a>
+</div>

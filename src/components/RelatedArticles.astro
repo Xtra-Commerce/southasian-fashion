@@ -1,0 +1,56 @@
+---
+import ArticleCard from './ArticleCard.astro';
+
+interface Article {
+  slug: string;
+  title: string;
+  excerpt: string;
+  category: string;
+  tags?: string[];
+}
+
+interface Props {
+  articles: Article[];
+  title?: string;
+}
+
+const { articles, title = 'Related Guides' } = Astro.props;
+---
+{articles.length > 0 && (
+  <section class="related-section">
+    <h2 class="related-section__title">{title}</h2>
+    <div class="related-section__grid">
+      {articles.map(article => (
+        <ArticleCard
+          title={article.title}
+          excerpt={article.excerpt}
+          category={article.category}
+          slug={article.slug}
+          tags={article.tags}
+        />
+      ))}
+    </div>
+  </section>
+)}
+
+<style>
+  .related-section {
+    margin: var(--space-4xl) 0;
+    padding-top: var(--space-3xl);
+    border-top: 1px solid var(--color-border-light);
+  }
+
+  .related-section__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 500;
+    margin-bottom: var(--space-2xl);
+    color: var(--color-charcoal);
+  }
+
+  .related-section__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-xl);
+  }
+</style>

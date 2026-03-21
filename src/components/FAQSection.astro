@@ -1,0 +1,48 @@
+---
+import { generateFAQSchema } from '../utils/schema';
+
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  faqs: FAQ[];
+  title?: string;
+}
+
+const { faqs, title = 'Frequently Asked Questions' } = Astro.props;
+const schema = generateFAQSchema(faqs);
+---
+<section class="faq-section">
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  <h2 class="faq-section__title">{title}</h2>
+  <div class="faq-section__list">
+    {faqs.map(faq => (
+      <details class="faq-item">
+        <summary>{faq.question}</summary>
+        <div class="faq-item__answer">
+          <p>{faq.answer}</p>
+        </div>
+      </details>
+    ))}
+  </div>
+</section>
+
+<style>
+  .faq-section {
+    margin: var(--space-3xl) 0;
+  }
+
+  .faq-section__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 500;
+    margin-bottom: var(--space-xl);
+    color: var(--color-charcoal);
+  }
+
+  .faq-section__list {
+    border-top: 1px solid var(--color-border-light);
+  }
+</style>

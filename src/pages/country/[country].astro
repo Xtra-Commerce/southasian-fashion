@@ -1,0 +1,139 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import HeroSection from '../../components/HeroSection.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import CTABlock from '../../components/CTABlock.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+import { getPurvXLink } from '../../utils/geo';
+
+interface CountryData {
+  name: string;
+  slug: string;
+  description: string;
+  intro: string;
+}
+
+const countries: CountryData[] = [
+  {
+    name: 'India',
+    slug: 'india',
+    description: 'South Asian fashion guide for India. Shop lehengas, sarees, sherwanis, and more from Indian designers and marketplaces.',
+    intro: 'India is the heartland of South Asian fashion, home to centuries-old textile traditions spanning silk sarees from Kanchipuram to intricate chikankari embroidery from Lucknow. Whether you are shopping for a wedding in Delhi, looking for handloom sarees in Varanasi, or finding designer lehengas in Mumbai, this guide covers everything you need to navigate India\'s vibrant fashion landscape.',
+  },
+  {
+    name: 'United States',
+    slug: 'united-states',
+    description: 'Guide to buying and selling South Asian fashion in the United States. Find Indian outfits, tailors, and stores across the US.',
+    intro: 'The South Asian fashion market in the United States has grown substantially, driven by a large and fashion-conscious diaspora community. From Edison, New Jersey to the Bay Area, from Houston to Chicago, there are thriving hubs for South Asian fashion retail. Whether you are shopping for a wedding outfit, looking to sell a pre-loved lehenga, or simply want to add ethnic wear to your wardrobe, the US offers both in-store and online options.',
+  },
+  {
+    name: 'United Kingdom',
+    slug: 'united-kingdom',
+    description: 'Guide to South Asian fashion in the UK. Find Indian and Pakistani outfits, boutiques, and styling advice for the British South Asian community.',
+    intro: 'The United Kingdom has one of the largest South Asian communities outside of the subcontinent, and its fashion scene reflects this rich cultural heritage. From Southall in London to the Curry Mile in Manchester, British South Asians have built a vibrant ecosystem of boutiques, designers, and fashion events. The UK is also a hub for contemporary South Asian fashion that blends traditional craftsmanship with modern British style.',
+  },
+  {
+    name: 'Canada',
+    slug: 'canada',
+    description: 'Guide to South Asian fashion in Canada. Find Indian outfits, boutiques, and wedding fashion resources in Toronto, Vancouver, and beyond.',
+    intro: 'Canada is home to a large and growing South Asian population, particularly in cities like Toronto, Vancouver, Calgary, and Edmonton. The Canadian South Asian fashion market spans everything from luxury bridal boutiques in Brampton to online platforms serving communities across provinces. With a mix of traditional tastes and contemporary sensibilities, Canadian South Asian fashion offers unique opportunities for both buyers and sellers.',
+  },
+];
+
+export function getStaticPaths() {
+  return [
+    { params: { country: 'india' } },
+    { params: { country: 'united-states' } },
+    { params: { country: 'united-kingdom' } },
+    { params: { country: 'canada' } },
+  ];
+}
+
+const { country: countrySlug } = Astro.params;
+const countryData = countries.find(c => c.slug === countrySlug)!;
+const purvxLink = getPurvXLink({ country: countryData.name });
+
+// Get articles relevant to this country
+const allCollections = await Promise.all([
+  getCollection('buy'),
+  getCollection('sell'),
+  getCollection('wedding'),
+  getCollection('learn'),
+  getCollection('compare'),
+]);
+
+const allArticles = allCollections.flat()
+  .filter(a => !a.data.draft)
+  .filter(a => {
+    const countryMatch = a.data.country?.toLowerCase() === countryData.name.toLowerCase();
+    const tagMatch = a.data.tags?.some((t: string) => t.toLowerCase().includes(countryData.name.toLowerCase()));
+    return countryMatch || tagMatch;
+  })
+  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
+---
+<BaseLayout
+  title={`South Asian Fashion in ${countryData.name}`}
+  description={countryData.description}
+>
+  <div class="container">
+    <Breadcrumbs items={[
+      { name: 'Countries', url: '/' },
+      { name: countryData.name, url: `/country/${countryData.slug}` },
+    ]} />
+  </div>
+
+  <HeroSection
+    title={`South Asian Fashion in ${countryData.name}`}
+    subtitle={countryData.description}
+    label={countryData.name}
+    size="medium"
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="country-intro">
+        <p>{countryData.intro}</p>
+      </div>
+
+      {allArticles.length > 0 && (
+        <div style="margin-top:var(--space-3xl);">
+          <h2 style="font-family:var(--font-display);font-weight:400;margin-bottom:var(--space-2xl);">Guides for {countryData.name}</h2>
+          <div class="grid grid--3">
+            {allArticles.map(article => (
+              <ArticleCard
+                title={article.data.title}
+                excerpt={article.data.description}
+                category={article.data.category}
+                slug={article.id}
+                tags={article.data.tags}
+              />
+            ))}
+          </div>
+        </div>
+      )}
+
+      <div style="margin-top:var(--space-3xl);">
+        <CTABlock
+          type="buy"
+          variant="dark"
+          country={countryData.name}
+          title={`Shop South Asian Fashion${countryData.name === 'India' ? ' on PurvX.in' : ' on PurvX'}`}
+        />
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .country-intro {
+    max-width: var(--max-width-narrow);
+    margin: 0 auto;
+  }
+
+  .country-intro p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+  }
+</style>

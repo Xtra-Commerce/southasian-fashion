@@ -1,0 +1,69 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import CTABlock from '../components/CTABlock.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+
+const articles = (await getCollection('wedding'))
+  .filter(a => !a.data.draft)
+  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
+---
+<BaseLayout
+  title="Wedding Guides — South Asian Wedding Outfit & Etiquette Guide"
+  description="Complete guides for South Asian weddings. What to wear as a guest, bridal outfit selection, event-by-event dress codes, and cultural etiquette for every ceremony."
+>
+  <div class="container">
+    <Breadcrumbs items={[{ name: 'Wedding Guides', url: '/wedding-guides' }]} />
+  </div>
+
+  <HeroSection
+    title="South Asian Wedding Guides"
+    subtitle="Everything you need to know about dressing for South Asian weddings. From guest outfits to bridal looks, event etiquette to cultural traditions."
+    label="Wedding Guides"
+    size="medium"
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="intro-text">
+        <p>South Asian weddings are multi-day celebrations filled with color, tradition, and ceremony. Each event has its own dress code, and choosing the right outfit is both an art and a sign of respect. Whether you're a first-time guest or planning your own wedding wardrobe, our guides cover everything from sangeet outfits to reception looks, with cultural context and practical shopping advice.</p>
+      </div>
+
+      {articles.length > 0 ? (
+        <div class="grid grid--3" style="margin-top:var(--space-2xl);">
+          {articles.map(article => (
+            <ArticleCard
+              title={article.data.title}
+              excerpt={article.data.description}
+              category={article.data.category}
+              slug={article.id}
+              tags={article.data.tags}
+            />
+          ))}
+        </div>
+      ) : (
+        <p style="text-align:center;color:var(--color-text-light);padding:var(--space-3xl) 0;">Wedding guides coming soon.</p>
+      )}
+
+      <div style="margin-top:var(--space-3xl);">
+        <CTABlock type="buy" variant="dark" title="Shop Wedding Outfits on PurvX" text="Find stunning preowned lehengas, sarees, and sherwanis at a fraction of retail. New listings every day." />
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .intro-text {
+    max-width: var(--max-width-narrow);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .intro-text p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+  }
+</style>

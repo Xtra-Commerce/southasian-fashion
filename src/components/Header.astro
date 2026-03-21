@@ -1,0 +1,251 @@
+---
+import { mainNav } from '../data/navigation';
+---
+<header class="header">
+  <div class="header__inner container--wide">
+    <a href="/" class="header__logo">
+      <span class="header__logo-mark">SA</span>
+      <span class="header__logo-text">SouthAsian<span class="header__logo-dot">.</span>Fashion</span>
+    </a>
+
+    <nav class="header__nav hide-mobile" aria-label="Main navigation">
+      {mainNav.map(item => (
+        <div class="header__nav-item">
+          <a href={item.href} class="header__nav-link">{item.label}</a>
+          {item.children && (
+            <div class="header__dropdown">
+              {item.children.map(child => (
+                <a href={child.href} class="header__dropdown-link">{child.label}</a>
+              ))}
+            </div>
+          )}
+        </div>
+      ))}
+    </nav>
+
+    <div class="header__actions">
+      <a href="https://purvx.com" class="btn btn--primary btn--sm" target="_blank" rel="noopener">
+        Shop PurvX <span class="arrow">&rarr;</span>
+      </a>
+      <button class="header__menu-btn hide-desktop" aria-label="Open menu" id="menuToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="header__mobile-menu" id="mobileMenu">
+    <nav class="header__mobile-nav">
+      {mainNav.map(item => (
+        <div class="header__mobile-group">
+          <a href={item.href} class="header__mobile-link header__mobile-link--parent">{item.label}</a>
+          {item.children && (
+            <div class="header__mobile-children">
+              {item.children.map(child => (
+                <a href={child.href} class="header__mobile-link">{child.label}</a>
+              ))}
+            </div>
+          )}
+        </div>
+      ))}
+      <a href="https://purvx.com" class="btn btn--primary" target="_blank" rel="noopener" style="margin-top:1.5rem;width:100%;justify-content:center;">
+        Shop PurvX <span class="arrow">&rarr;</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(254, 252, 249, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--color-border-light);
+    height: var(--header-height);
+  }
+
+  .header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 var(--gutter);
+    max-width: var(--max-width-wide);
+    margin: 0 auto;
+  }
+
+  .header__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    text-decoration: none;
+  }
+
+  .header__logo-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--color-deep-burgundy);
+    color: white;
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    letter-spacing: 0.02em;
+  }
+
+  .header__logo-text {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-charcoal);
+    letter-spacing: -0.01em;
+  }
+
+  .header__logo-dot {
+    color: var(--color-saffron);
+  }
+
+  .header__nav {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .header__nav-item {
+    position: relative;
+  }
+
+  .header__nav-link {
+    display: block;
+    padding: 0.5rem 0.9rem;
+    font-family: var(--font-heading);
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    transition: color var(--duration-fast);
+    text-decoration: none;
+  }
+
+  .header__nav-link:hover {
+    color: var(--color-charcoal);
+  }
+
+  .header__dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 240px;
+    background: white;
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    padding: 0.5rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(4px);
+    transition: all var(--duration-normal) var(--ease-out);
+  }
+
+  .header__nav-item:hover .header__dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .header__dropdown-link {
+    display: block;
+    padding: 0.6rem 1.25rem;
+    font-size: 0.88rem;
+    color: var(--color-text-secondary);
+    transition: all var(--duration-fast);
+    text-decoration: none;
+  }
+
+  .header__dropdown-link:hover {
+    color: var(--color-saffron);
+    background: var(--color-ivory);
+  }
+
+  .header__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+  }
+
+  .btn--sm {
+    padding: 0.55rem 1.25rem;
+    font-size: 0.78rem;
+  }
+
+  .header__menu-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+  }
+
+  .header__menu-btn span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--color-charcoal);
+    transition: all var(--duration-normal) var(--ease-out);
+  }
+
+  .header__mobile-menu {
+    display: none;
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    z-index: 99;
+    overflow-y: auto;
+    padding: var(--space-xl) var(--gutter);
+  }
+
+  .header__mobile-menu.is-open {
+    display: block;
+  }
+
+  .header__mobile-group {
+    margin-bottom: var(--space-lg);
+  }
+
+  .header__mobile-link {
+    display: block;
+    padding: 0.5rem 0;
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    text-decoration: none;
+  }
+
+  .header__mobile-link--parent {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--color-charcoal);
+  }
+
+  .header__mobile-children {
+    padding-left: var(--space-md);
+    border-left: 2px solid var(--color-border-light);
+    margin-top: var(--space-xs);
+  }
+</style>
+
+<script is:inline>
+  document.getElementById('menuToggle')?.addEventListener('click', function() {
+    document.getElementById('mobileMenu')?.classList.toggle('is-open');
+  });
+</script>

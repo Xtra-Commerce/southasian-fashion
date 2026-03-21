@@ -1,0 +1,81 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { generateOrganizationSchema } from '../utils/schema';
+
+interface Props {
+  title: string;
+  description?: string;
+  ogImage?: string;
+  canonicalUrl?: string;
+  schema?: object;
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description = 'The authoritative guide to South Asian fashion. Expert buying guides, wedding outfit advice, selling tips, and cultural style education.',
+  ogImage = '/images/og-default.jpg',
+  canonicalUrl,
+  schema,
+  noindex = false,
+} = Astro.props;
+
+const fullTitle = title === 'Home' ? 'SouthAsian.Fashion — The Authority on South Asian Fashion' : `${title} | SouthAsian.Fashion`;
+const resolvedCanonical = canonicalUrl || Astro.url.href;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  {noindex && <meta name="robots" content="noindex, nofollow" />}
+  <link rel="canonical" href={resolvedCanonical} />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:url" content={resolvedCanonical} />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SouthAsian.Fashion" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={fullTitle} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage} />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(generateOrganizationSchema())} />
+
+  <!-- Page-specific schema -->
+  {schema && <script type="application/ld+json" set:html={JSON.stringify(schema)} />}
+
+  <!-- Google Analytics placeholder -->
+  <!-- Replace G-XXXXXXX with your actual GA4 measurement ID -->
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    // gtag('config', 'G-XXXXXXX');
+  </script>
+</head>
+<body>
+  <Header />
+  <main>
+    <slot />
+  </main>
+  <Footer />
+</body>
+</html>
