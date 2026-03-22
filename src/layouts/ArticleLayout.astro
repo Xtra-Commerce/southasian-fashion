@@ -3,7 +3,7 @@ import BaseLayout from './BaseLayout.astro';
 import FAQSection from '../components/FAQSection.astro';
 import RelatedArticles from '../components/RelatedArticles.astro';
 import InlineArticleImages from '../components/InlineArticleImages.astro';
-import PurvXListings from '../components/PurvXListings.astro';
+import PurvXShopSection from '../components/PurvXShopSection.astro';
 import { generateArticleSchema } from '../utils/schema';
 import { getArticleHeroImage, getArticleInlineImages } from '../utils/images';
 import { getCollection } from 'astro:content';
@@ -104,7 +104,7 @@ const readingTime = Math.ceil((frontmatter.description.split(' ').length || 0) /
           <time datetime={frontmatter.publishDate}>
             {new Date(frontmatter.publishDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
           </time>
-          <span class="article__meta-separator">•</span>
+          <span class="article__meta-separator">â¢</span>
           <span class="article__reading-time">{readingTime} min read</span>
         </div>
       </div>
@@ -113,7 +113,7 @@ const readingTime = Math.ceil((frontmatter.description.split(' ').length || 0) /
     {/* Main Content */}
     <div class="article__body">
       <div class="article__content">
-        {/* First image group — before the content starts */}
+        {/* First image group â before the content starts */}
         {inlineImageGroups.length > 0 && (
           <InlineArticleImages images={inlineImageGroups[0]} />
         )}
@@ -122,12 +122,12 @@ const readingTime = Math.ceil((frontmatter.description.split(' ').length || 0) /
           <slot />
         </div>
 
-        {/* Second image group — after the prose */}
+        {/* Second image group â after the prose */}
         {inlineImageGroups.length > 1 && (
           <InlineArticleImages images={inlineImageGroups[1]} />
         )}
 
-        {/* Third image group — if available */}
+        {/* Third image group â if available */}
         {inlineImageGroups.length > 2 && (
           <InlineArticleImages images={inlineImageGroups[2]} />
         )}
@@ -137,7 +137,9 @@ const readingTime = Math.ceil((frontmatter.description.split(' ').length || 0) /
     {/* PurvX Shop Section */}
     {shopSectionKey && (
       <section class="article__shop">
-        <PurvXListings shopCategory={shopSectionKey} />
+        <div class="container">
+          <PurvXShopSection sectionKey={shopSectionKey} title={`Shop ${shopSectionKey === 'wedding' ? 'Wedding' : shopSectionKey === 'lehenga' ? 'Lehenga' : shopSectionKey === 'saree' ? 'Saree' : shopSectionKey === 'mens' ? 'Men\'s' : ''} Outfits on PurvX`} />
+        </div>
       </section>
     )}
 
@@ -157,7 +159,7 @@ const readingTime = Math.ceil((frontmatter.description.split(' ').length || 0) /
 
     {/* Subtle End CTA */}
     <div class="article__end-cta">
-      <a href="/shop" class="article__cta-link">Continue Shopping on PurvX <span class="article__cta-arrow">→</span></a>
+      <a href="/shop" class="article__cta-link">Continue Shopping on PurvX <span class="article__cta-arrow">â</span></a>
     </div>
   </article>
 </BaseLayout>
