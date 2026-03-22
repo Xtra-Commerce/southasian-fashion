@@ -1,8 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
-import PurvXListings from '../components/PurvXListings.astro';
-import { getHomepageHeroImage } from '../utils/images';
+import PurvXShopSection from '../components/PurvXShopSection.astro';
+import { getHomepageHeroImage, getArticleCardImage } from '../utils/images';
 import { getCollection } from 'astro:content';
 
 const heroImage = getHomepageHeroImage(1600, 800);
@@ -41,11 +41,12 @@ const learnArticles = allArticles.filter(a => a.data.category === 'learn').slice
       <div class="container">
         <div class="section-label">Editor's Selection</div>
         <div class="editorial-grid">
-          {featured.map((article, index) => (
-            index === 0 ? (
+          {featured.map((article, index) => {
+            const img = getArticleCardImage(article.id, index === 0 ? 900 : 600, index === 0 ? 600 : 400);
+            return index === 0 ? (
               <a href={`/${article.data.category}/${article.id}`} class="editorial-grid__item editorial-grid__item--featured">
                 <article class="featured-card">
-                  <img src={article.data.image || ''} alt={article.data.title} class="featured-card__image" />
+                  <img src={img.url} alt={img.alt} class="featured-card__image" loading="eager" />
                   <div class="featured-card__content">
                     <span class="featured-card__category">{article.data.category.toUpperCase()}</span>
                     <h2 class="featured-card__title">{article.data.title}</h2>
@@ -56,7 +57,7 @@ const learnArticles = allArticles.filter(a => a.data.category === 'learn').slice
             ) : (
               <a href={`/${article.data.category}/${article.id}`} class="editorial-grid__item">
                 <article class="card">
-                  <img src={article.data.image || ''} alt={article.data.title} class="card__image" />
+                  <img src={img.url} alt={img.alt} class="card__image" loading="lazy" />
                   <div class="card__body">
                     <span class="card__category">{article.data.category.toUpperCase()}</span>
                     <h3 class="card__title">{article.data.title}</h3>
@@ -64,8 +65,8 @@ const learnArticles = allArticles.filter(a => a.data.category === 'learn').slice
                   </div>
                 </article>
               </a>
-            )
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
@@ -103,30 +104,36 @@ const learnArticles = allArticles.filter(a => a.data.category === 'learn').slice
         <h2 class="section-title">Wedding Guides</h2>
 
         <div class="wedding-grid">
-          {weddingGuides[0] && (
-            <a href={`/wedding/${weddingGuides[0].id}`} class="wedding-hero">
-              <img src={weddingGuides[0].data.image || ''} alt={weddingGuides[0].data.title} class="wedding-hero__image" />
-              <div class="wedding-hero__content">
-                <h3 class="wedding-hero__title">{weddingGuides[0].data.title}</h3>
-                <p class="wedding-hero__excerpt">{weddingGuides[0].data.description}</p>
-              </div>
-            </a>
-          )}
-
-          <div class="wedding-side">
-            {weddingGuides.slice(1, 3).map(article => (
-              <a href={`/wedding/${article.id}`} class="card card--compact">
-                <img src={article.data.image || ''} alt={article.data.title} class="card__image" />
-                <div class="card__body">
-                  <h4 class="card__title card__title--small">{article.data.title}</h4>
-                  <p class="card__excerpt card__excerpt--small">{article.data.description}</p>
+          {weddingGuides[0] && (() => {
+            const heroImg = getArticleCardImage(weddingGuides[0].id, 900, 600);
+            return (
+              <a href={`/wedding/${weddingGuides[0].id}`} class="wedding-hero">
+                <img src={heroImg.url} alt={heroImg.alt} class="wedding-hero__image" loading="lazy" />
+                <div class="wedding-hero__content">
+                  <h3 class="wedding-hero__title">{weddingGuides[0].data.title}</h3>
+                  <p class="wedding-hero__excerpt">{weddingGuides[0].data.description}</p>
                 </div>
               </a>
-            ))}
+            );
+          })()}
+
+          <div class="wedding-side">
+            {weddingGuides.slice(1, 3).map(article => {
+              const img = getArticleCardImage(article.id, 500, 350);
+              return (
+                <a href={`/wedding/${article.id}`} class="card card--compact">
+                  <img src={img.url} alt={img.alt} class="card__image" loading="lazy" />
+                  <div class="card__body">
+                    <h4 class="card__title card__title--small">{article.data.title}</h4>
+                    <p class="card__excerpt card__excerpt--small">{article.data.description}</p>
+                  </div>
+                </a>
+              );
+            })}
           </div>
         </div>
 
-        <a href="/wedding-guides" class="view-all-link">View all wedding guides →</a>
+        <a href="/wedding-guides" class="view-all-link">View all wedding guides â</a>
       </div>
     </section>
   )}
@@ -141,19 +148,22 @@ const learnArticles = allArticles.filter(a => a.data.category === 'learn').slice
         <h2 class="section-title">Buying Guides</h2>
 
         <div class="grid grid--3">
-          {buyingGuides.map(article => (
-            <a href={`/buy/${article.id}`} class="card">
-              <img src={article.data.image || ''} alt={article.data.title} class="card__image" />
-              <div class="card__body">
-                <span class="card__category">BUYING</span>
-                <h3 class="card__title">{article.data.title}</h3>
-                <p class="card__excerpt">{article.data.description}</p>
-              </div>
-            </a>
-          ))}
+          {buyingGuides.map(article => {
+            const img = getArticleCardImage(article.id, 600, 400);
+            return (
+              <a href={`/buy/${article.id}`} class="card">
+                <img src={img.url} alt={img.alt} class="card__image" loading="lazy" />
+                <div class="card__body">
+                  <span class="card__category">BUYING</span>
+                  <h3 class="card__title">{article.data.title}</h3>
+                  <p class="card__excerpt">{article.data.description}</p>
+                </div>
+              </a>
+            );
+          })}
         </div>
 
-        <a href="/buying" class="view-all-link">View all buying guides →</a>
+        <a href="/buying" class="view-all-link">View all buying guides â</a>
       </div>
     </section>
   )}
@@ -177,16 +187,18 @@ const learnArticles = allArticles.filter(a => a.data.category === 'learn').slice
           ))}
         </div>
 
-        <a href="/learn" class="view-all-link">Explore more →</a>
+        <a href="/learn" class="view-all-link">Explore more â</a>
       </div>
     </section>
   )}
 
   <hr class="section-divider" />
 
-  <!-- PurvX Listings at Bottom -->
+  <!-- PurvX Shop Section -->
   <section class="section purvx-section">
-    <PurvXListings category="bridal" />
+    <div class="container">
+      <PurvXShopSection sectionKey="wedding" title="Shop Wedding Outfits on PurvX" subtitle="Stunning lehengas, sarees, and sherwanis â preowned luxury at a fraction of retail" />
+    </div>
   </section>
 
   <!-- Simple Footer Explore Link -->
