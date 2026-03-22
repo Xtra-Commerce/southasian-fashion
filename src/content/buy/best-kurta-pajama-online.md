@@ -52,12 +52,12 @@ Kurta pajama fabrics must balance breathability, appearance, durability, and eas
 
 | Fabric Type | Best For | Wrinkle Resistance | Care | Price Range |
 |---|---|---|---|---|
-| **100% Cotton** | Casual, everyday | Low | Easy (hand or machine wash) | ₹1,500-4,000 |
-| **Cotton-Polyester (60-40)** | Everyday, office | Good | Easy (machine wash) | ₹2,000-5,000 |
-| **Linen-Cotton** | Summer, casual | Medium | Moderate (gentle wash) | ₹2,500-6,000 |
-| **Cotton-Silk (50-50)** | Party, festive | Good | Moderate (dry clean recommended) | ₹4,000-10,000 |
-| **Silk Blends (70%+)** | Formal, celebrations | Good | Professional care | ₹8,000-20,000 |
-| **Pure Silk** | Wedding, formal | Good | Professional care | ₹12,000-30,000+ |
+| **100% Cotton** | Casual, everyday | Low | Easy (hand or machine wash) | $18-48 |
+| **Cotton-Polyester (60-40)** | Everyday, office | Good | Easy (machine wash) | $24-60 |
+| **Linen-Cotton** | Summer, casual | Medium | Moderate (gentle wash) | $30-72 |
+| **Cotton-Silk (50-50)** | Party, festive | Good | Moderate (dry clean recommended) | $48-120 |
+| **Silk Blends (70%+)** | Formal, celebrations | Good | Professional care | $100-240 |
+| **Pure Silk** | Wedding, formal | Good | Professional care | $145-360+ |
 
 ## Collar Styles: Functional and Aesthetic
 
@@ -219,13 +219,13 @@ Kurta colors range from traditional solid tones to contemporary prints.
 
 | Category | Price Range | Typical Features | Best For |
 |---|---|---|---|
-| **Budget Casual** | ₹800-2,000 | Cotton or cotton blends, simple construction, basic quality | Home wear, casual outings |
-| **Everyday Wear** | ₹2,000-4,000 | Cotton-poly blends, quality construction, reasonable durability | Office, family events, casual |
-| **Party/Festive** | ₹4,000-10,000 | Silk blends, embroidery present, quality tailoring | Celebrations, semi-formal events |
-| **Premium Party** | ₹10,000-20,000 | Pure silk or high-quality blends, quality embroidery, excellent construction | Significant celebrations, formal |
-| **Wedding/Formal** | ₹20,000-40,000+ | Premium fabrics, hand embroidery, custom tailoring available | Weddings, major ceremonies |
+| **Budget Casual** | $10-24 | Cotton or cotton blends, simple construction, basic quality | Home wear, casual outings |
+| **Everyday Wear** | $24-48 | Cotton-poly blends, quality construction, reasonable durability | Office, family events, casual |
+| **Party/Festive** | $48-120 | Silk blends, embroidery present, quality tailoring | Celebrations, semi-formal events |
+| **Premium Party** | $120-240 | Pure silk or high-quality blends, quality embroidery, excellent construction | Significant celebrations, formal |
+| **Wedding/Formal** | $240-480+ | Premium fabrics, hand embroidery, custom tailoring available | Weddings, major ceremonies |
 
-**Value evaluation**: A ₹3,000 kurta pajama should feature cotton-poly blend (not pure synthetic), quality stitching, and straight-forward design without loose threads. Below ₹2,000, expect simpler construction and thinner fabric. Above ₹10,000, embroidery quality and fabric premium become essential to justify pricing.
+**Value evaluation**: A $36 kurta pajama should feature cotton-poly blend (not pure synthetic), quality stitching, and straight-forward design without loose threads. Below $24, expect simpler construction and thinner fabric. Above $120, embroidery quality and fabric premium become essential to justify pricing.
 
 ## Questions for Online Sellers
 
@@ -291,4 +291,4 @@ Successful kurta pajama purchases follow this approach:
 
 A well-chosen kurta pajama set becomes a versatile wardrobe staple worn repeatedly across seasons and occasions.
 
-Explore diverse kurta pajama selections on [PurvX.com](https://PurvX.com) for global options or [PurvX.in](https://PurvX.in) for India-specific collections with verified sizing and authentic craftsmanship.
+Explore diverse kurta pajama selections on marketplaces like PurvX for global options and India-specific collections with verified sizing and authentic craftsmanship.

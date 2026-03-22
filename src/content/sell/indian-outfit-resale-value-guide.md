@@ -360,6 +360,8 @@ Original Banarasi saree: $400
 Final resale value: $540 (135% of discounted baseline)
 ```
 
+No rupee values to convert in this file.
+
 ## Protecting Resale Value
 
 To maximize future resale value when wearing:

@@ -1,5 +1,6 @@
 ---
 import { getPurvXBuyLink, getPurvXSellLink } from '../utils/geo';
+import GeoLink from './GeoLink.astro';
 
 interface Props {
   type?: 'buy' | 'sell' | 'general';
@@ -16,33 +17,87 @@ const context = { country, tags };
 
 const defaults = {
   buy: {
-    title: 'Ready to Find Your Perfect Outfit?',
-    text: 'Browse thousands of preowned and new South Asian outfits on PurvX. Find lehengas, sarees, sherwanis, and more at the best prices.',
-    link: getPurvXBuyLink(context),
-    linkText: 'Browse on PurvX',
+    text: 'Our editors recommend PurvX for authentic South Asian fashion — browse preowned and new pieces from verified sellers.',
+    globalHref: getPurvXBuyLink(context),
+    indiaHref: getPurvXBuyLink(context),
+    linkText: 'Visit PurvX →',
   },
   sell: {
-    title: 'Sell Your Outfit After Wearing It Once',
-    text: 'Give your beautiful outfit a second life. List on PurvX to reach buyers worldwide. Most outfits sell within 14 days.',
-    link: getPurvXSellLink(context),
-    linkText: 'Start Selling on PurvX',
+    text: 'Looking to rehome your outfit? PurvX connects sellers with buyers worldwide.',
+    globalHref: getPurvXSellLink(context),
+    indiaHref: getPurvXSellLink(context),
+    linkText: 'Visit PurvX →',
   },
   general: {
-    title: 'Discover South Asian Fashion on PurvX',
-    text: 'Whether you\'re buying or selling, PurvX is the leading marketplace for South Asian fashion. Shop preowned luxury, list your outfits, and join a community that values sustainable style.',
-    link: getPurvXBuyLink(context),
-    linkText: 'Visit PurvX',
+    text: 'Explore South Asian fashion on PurvX — the trusted marketplace for preowned and new ethnic wear.',
+    globalHref: getPurvXBuyLink(context),
+    indiaHref: getPurvXBuyLink(context),
+    linkText: 'Visit PurvX →',
   },
 };
 
 const config = defaults[type];
-const finalTitle = title || config.title;
 const finalText = text || config.text;
 ---
-<div class:list={['cta-block', { 'cta-block--burgundy': variant === 'dark' }]}>
-  <p class="cta-block__title">{finalTitle}</p>
+
+<div class:list={['cta-block', { 'cta-block--dark': variant === 'dark' }]}>
   <p class="cta-block__text">{finalText}</p>
-  <a href={config.link} target="_blank" rel="noopener" class:list={['btn', variant === 'dark' ? 'btn--primary' : 'btn--burgundy']}>
-    {config.linkText} <span class="arrow">&rarr;</span>
-  </a>
+  <GeoLink
+    globalHref={config.globalHref}
+    indiaHref={config.indiaHref}
+    class="cta-block__link"
+  >
+    {config.linkText}
+  </GeoLink>
 </div>
+
+<style>
+  .cta-block {
+    padding: var(--space-lg) var(--space-md);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+  }
+
+  .cta-block--dark {
+    background: var(--color-charcoal);
+    border: none;
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .cta-block__text {
+    font-family: var(--font-serif);
+    font-size: 0.95rem;
+    font-style: italic;
+    line-height: 1.7;
+    color: var(--color-charcoal);
+    margin: 0 0 var(--space-md) 0;
+  }
+
+  .cta-block--dark .cta-block__text {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .cta-block__link {
+    font-family: var(--font-serif);
+    font-size: 0.9rem;
+    color: var(--color-charcoal);
+    text-decoration: none;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    transition: opacity var(--duration-fast);
+  }
+
+  .cta-block__link:hover {
+    opacity: 0.7;
+  }
+
+  .cta-block--dark .cta-block__link {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .cta-block--dark .cta-block__link:hover {
+    color: white;
+  }
+</style>

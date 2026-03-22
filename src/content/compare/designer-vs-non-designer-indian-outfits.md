@@ -76,12 +76,12 @@ Designer brands typically offer included alterations and custom tailoring to you
 
 | Category | Designer | Non-Designer |
 |----------|----------|--------------|
-| Entry-Level Saree | ₹15,000-₹30,000 | ₹1,500-₹5,000 |
-| Premium Saree | ₹30,000-₹100,000+ | ₹5,000-₹15,000 |
-| Luxury Saree | ₹100,000+ | ₹15,000-₹30,000 |
-| Entry Lehenga | ₹25,000-₹50,000 | ₹3,000-₹8,000 |
-| Bridal Lehenga | ₹100,000-₹500,000+ | ₹20,000-₹75,000 |
-| Designer Suit | ₹10,000-₹40,000 | ₹2,000-₹8,000 |
+| Entry-Level Saree | $180-$360 | $18-$60 |
+| Premium Saree | $360-$1,200+ | $60-$180 |
+| Luxury Saree | $1,200+ | $180-$360 |
+| Entry Lehenga | $300-$600 | $35-$100 |
+| Bridal Lehenga | $1,200-$6,000+ | $240-$900 |
+| Designer Suit | $120-$480 | $24-$100 |
 
 The price differential exists because designer brands invest in research, design development, brand marketing, and retail infrastructure. They also maintain smaller production runs, ensuring exclusivity.
 
@@ -121,10 +121,10 @@ If personalization is important, designer brands offer superior options, though 
 
 | Type | Original Price | Typical Resale % | Resale Price |
 |------|----------------|-----------------|--------------|
-| Designer Saree | ₹50,000 | 45-60% | ₹22,500-₹30,000 |
-| Designer Lehenga | ₹100,000 | 40-55% | ₹40,000-₹55,000 |
-| Non-Designer Saree | ₹8,000 | 25-40% | ₹2,000-₹3,200 |
-| Non-Designer Lehenga | ₹15,000 | 20-35% | ₹3,000-₹5,250 |
+| Designer Saree | $600 | 45-60% | $270-$360 |
+| Designer Lehenga | $1,200 | 40-55% | $480-$660 |
+| Non-Designer Saree | $95 | 25-40% | $24-$38 |
+| Non-Designer Lehenga | $180 | 20-35% | $36-$63 |
 
 Designer pieces significantly outperform in resale value. A designer saree retains substantial value due to brand recognition, consistent quality, and demand from secondhand buyers. Non-designer pieces depreciate faster unless from respected artisan sources.
 
@@ -142,7 +142,7 @@ Non-designer pieces, particularly budget options, may show wear after 3-5 years 
 
 1. **Bridal or Major Celebration Outfits** - You'll wear these repeatedly in photographs and memory. Designer quality ensures the piece remains stunning decades later.
 
-2. **Signature Investment Pieces** - A designer piece you'll wear 10+ times becomes economical per-wear. A ₹50,000 piece worn 20 times costs ₹2,500 per wear.
+2. **Signature Investment Pieces** - A designer piece you'll wear 10+ times becomes economical per-wear. A $600 piece worn 20 times costs $30 per wear.
 
 3. **Heirloom Intentions** - If you want to pass pieces to future generations, designer craftsmanship ensures the piece survives and remains beautiful.
 
@@ -201,6 +201,6 @@ Building a wardrobe with selected designer investment pieces supplemented by qua
 
 ## Discover Your Perfect Fit
 
-Whether you're ready to invest in a designer masterpiece or building your collection with non-designer quality pieces, **PurvX** connects you with verified sellers across the entire spectrum. Compare designer and non-designer options, read authentic reviews, and find pieces that match your budget and vision.
+Whether you're ready to invest in a designer masterpiece or building your collection with non-designer quality pieces, platforms like PurvX connect you with verified sellers across the entire spectrum. Compare designer and non-designer options, read authentic reviews, and find pieces that match your budget and vision.
 
 **[Shop Designer Indian Fashion](#)** | **[Explore Non-Designer Alternatives](#)** | **[Start Shopping](#)**

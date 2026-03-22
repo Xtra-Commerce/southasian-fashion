@@ -20,20 +20,20 @@ This guide covers every step from choosing the right platform to optimizing list
 
 | Platform | Best For | Audience | Fees | Strengths |
 |----------|----------|----------|------|-----------|
-| **PurvX** | High-end Indian wear | South Asian diaspora + collectors | 10-15% commission | Specialized audience, easy Indian pricing |
+| **Specialty platforms** | High-end Indian wear | South Asian diaspora + collectors | 10-15% commission | Specialized audience, straightforward pricing |
 | eBay | Volume sellers | Global, vintage-focused | 12.9% + $0.30 | Largest reach, auction options |
 | Depop | Fashion-forward buyers | Gen Z + millennials | 10% | Mobile-first, social features |
 | Vestiaire Collective | Luxury resale | European + affluent buyers | 20% | Premium positioning |
 | Instagram Shop | Direct-to-consumer | Your existing followers | 0% (payment processing fees only) | Highest margins, relationship-building |
 
-**PurvX stands out for Indian fashion** because their team understands pricing nuances. A saree that seems undervalued on eBay will command premium prices on a platform where buyers specifically seek heritage pieces. Visit [PurvX.com](https://www.purvx.com) or [PurvX.in](https://purvx.in) to understand their audience and commission structure.
+**Platforms like PurvX stand out for Indian fashion** because they understand pricing nuances specific to heritage textiles. A saree that seems undervalued on eBay will command premium prices on platforms where buyers specifically seek authentic Indian pieces and understand the value of craftsmanship.
 
 ### Platform Selection Framework
 
 **Choose based on your goals:**
 - **Speed of sales**: Instagram + DMs (20-30 days), Depop (30-40 days), eBay (40-60 days)
 - **Seller fees**: Direct sales via Instagram (0%), PurvX (10-15%), eBay (12.9%), Vestiaire (20%)
-- **Audience sophistication**: PurvX and Vestiaire buyers know the difference between zardozi and mukesh. eBay buyers may not.
+- **Audience sophistication**: Specialized marketplaces and luxury platforms attract buyers who know the difference between zardozi and mukesh. eBay buyers may not.
 - **Item type**: Designer pieces → Vestiaire; mid-range → PurvX; vintage/bulk → eBay
 
 ## Step 2: Professional Photography That Sells
@@ -220,15 +220,15 @@ Example: "Banarasi silk saree with zardozi embroidery, gold paisley motifs, wedd
 **Handling returns:**
 "I stand behind the condition of this piece. If it arrives and you feel the condition doesn't match the description, I'll issue a full refund within 7 days of receipt. Shipping costs are non-refundable, but I'll cover return shipping if I made an error."
 
-## Leveraging PurvX for Maximum Results
+## Leveraging Specialized Platforms for Maximum Results
 
-If you're selling premium South Asian wear, **PurvX (accessible at [PurvX.com](https://www.purvx.com) and [PurvX.in](https://purvx.in)) offers distinct advantages:**
+If you're selling premium South Asian wear, **platforms specializing in Indian fashion offer distinct advantages:**
 
 1. **Specialized audience** understands Indian fashion value—no explaining what zardozi is
-2. **Simplified pricing** in both USD and INR for global audiences
-3. **Better search discoverability** for Indian textiles and techniques
+2. **Streamlined pricing** handling for global audiences in multiple currencies
+3. **Better search discoverability** for Indian textiles and traditional embroidery techniques
 4. **Payment protection** for both parties in international transactions
-5. **Buyer reviews specifically understand South Asian fashion** condition and fit standards
+5. **Buyer reviews understand South Asian fashion** condition standards and authentic construction
 
 ## Conclusion
 

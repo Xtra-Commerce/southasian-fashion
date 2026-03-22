@@ -1,0 +1,56 @@
+---
+/**
+ * GeoLink Component
+ * Renders a link that dynamically updates href based on detected country
+ * Listens for geo:detected event and swaps href attributes
+ */
+
+export interface Props {
+  globalHref: string;
+  indiaHref: string;
+  class?: string;
+}
+
+const { globalHref, indiaHref, class: className } = Astro.props;
+---
+
+<a
+  data-geo-global={globalHref}
+  data-geo-india={indiaHref}
+  href={globalHref}
+  class={className}
+  <slot />
+</a>
+
+<script is:inline>
+  /**
+   * Updates geo-aware links based on detected country
+   * Listens for the geo:detected custom event
+   */
+  function updateGeoLinks(countryCode) {
+    // Find all geo-aware links
+    const geoLinks = document.querySelectorAll('[data-geo-global]');
+
+    for (const link of geoLinks) {
+      const globalHref = link.getAttribute('data-geo-global');
+      const indiaHref = link.getAttribute('data-geo-india');
+
+      if (countryCode === 'IN' && indiaHref) {
+        link.href = indiaHref;
+      } else if (globalHref) {
+        link.href = globalHref;
+      }
+    }
+  }
+
+  // Check if country was already detected and stored
+  const storedCountry = localStorage.getItem('sa_country');
+  if (storedCountry) {
+    updateGeoLinks(storedCountry);
+  }
+
+  // Listen for geo detection event
+  document.addEventListener('geo:detected', (event) => {
+    updateGeoLinks(event.detail.country);
+  });
+</script>

@@ -217,13 +217,13 @@ Salwar kameez fabrics must accommodate daily wear while maintaining appearance a
 
 | Fabric Type | Best For | Wrinkle Resistance | Care | Price Range |
 |---|---|---|---|---|
-| **100% Cotton** | Casual, everyday | Low | Easy (hand/machine wash) | ₹1,500-4,000 |
-| **Cotton-Poly (60-40)** | Everyday, office | Good | Easy (machine wash) | ₹2,000-5,000 |
-| **Cotton-Silk (50-50)** | Party, celebrations | Medium | Moderate (hand wash/dry clean) | ₹4,000-10,000 |
-| **Silk Blends (70%+)** | Formal, celebrations | Good | Professional care | ₹8,000-18,000 |
-| **Pure Silk** | Wedding, formal | Good | Professional care | ₹12,000-25,000+ |
-| **Chanderi** | Casual to party | Medium | Gentle wash/dry clean | ₹4,000-12,000 |
-| **Linen-Cotton** | Summer, casual | High | Easy (gentle wash) | ₹2,500-6,000 |
+| **100% Cotton** | Casual, everyday | Low | Easy (hand/machine wash) | $18-48 |
+| **Cotton-Poly (60-40)** | Everyday, office | Good | Easy (machine wash) | $24-60 |
+| **Cotton-Silk (50-50)** | Party, celebrations | Medium | Moderate (hand wash/dry clean) | $48-120 |
+| **Silk Blends (70%+)** | Formal, celebrations | Good | Professional care | $100-220 |
+| **Pure Silk** | Wedding, formal | Good | Professional care | $145-300+ |
+| **Chanderi** | Casual to party | Medium | Gentle wash/dry clean | $48-145 |
+| **Linen-Cotton** | Summer, casual | High | Easy (gentle wash) | $30-72 |
 
 ## Traditional vs. Modern: Understanding Aesthetic Differences
 
@@ -240,7 +240,7 @@ Salwar kameez exist along a spectrum from deeply traditional to contemporary fus
 
 **Best for**: Cultural occasions, weddings, traditional celebrations, wearers who prefer classic aesthetics
 
-**Price**: Typically ₹8,000-25,000+ depending on hand work authenticity
+**Price**: Typically $100-300+ depending on hand work authenticity
 
 **Quality markers**: Hand embroidery characteristics, regional weaver involvement, traditional technique quality
 
@@ -255,7 +255,7 @@ Salwar kameez exist along a spectrum from deeply traditional to contemporary fus
 
 **Best for**: Modern occasions, fashion-forward wearers, office environments, everyday contemporary styling
 
-**Price**: Range from ₹2,000-10,000 depending on brand and embellishment
+**Price**: Range from $25-120 depending on brand and embellishment
 
 **Quality markers**: Construction quality, fabric premium, design coherence
 
@@ -269,7 +269,7 @@ Salwar kameez exist along a spectrum from deeply traditional to contemporary fus
 
 **Best for**: Versatile wearers wanting tradition with modern sensibility, celebrations, family events
 
-**Price**: Mid-range ₹5,000-12,000
+**Price**: Mid-range $60-150
 
 **Quality markers**: Balance of traditional techniques with modern construction quality
 
@@ -371,13 +371,13 @@ Salwar kameez colors should photograph accurately and remain colorfast with regu
 
 | Category | Price Range | Typical Features | Best For |
 |---|---|---|---|
-| **Budget Casual** | ₹1,500-3,000 | Cotton or cotton-poly, simple design, basic quality | Home wear, casual occasions |
-| **Everyday Wear** | ₹3,000-5,000 | Cotton-poly blends, reasonable embroidery, good construction | Office, family events, regular wear |
-| **Party/Festive** | ₹5,000-10,000 | Cotton-silk blends, quality embroidery, excellent construction | Celebrations, semi-formal events |
-| **Premium Party** | ₹10,000-18,000 | Pure silk or premium blends, hand embroidery present, superior quality | Significant celebrations, formal wear |
-| **Wedding/Formal** | ₹18,000-35,000+ | Premium fabrics, extensive hand work, custom options available | Weddings, major occasions |
+| **Budget Casual** | $18-36 | Cotton or cotton-poly, simple design, basic quality | Home wear, casual occasions |
+| **Everyday Wear** | $36-60 | Cotton-poly blends, reasonable embroidery, good construction | Office, family events, regular wear |
+| **Party/Festive** | $60-120 | Cotton-silk blends, quality embroidery, excellent construction | Celebrations, semi-formal events |
+| **Premium Party** | $120-220 | Pure silk or premium blends, hand embroidery present, superior quality | Significant celebrations, formal wear |
+| **Wedding/Formal** | $220-420+ | Premium fabrics, extensive hand work, custom options available | Weddings, major occasions |
 
-**Value evaluation**: A ₹4,000 salwar kameez should feature cotton-poly blend (not pure synthetic), quality stitching, even embellishment (if present), and reliable construction. Below ₹2,000, expect simpler construction. Above ₹12,000, hand embroidery and premium silk should justify pricing.
+**Value evaluation**: A $48 salwar kameez should feature cotton-poly blend (not pure synthetic), quality stitching, even embellishment (if present), and reliable construction. Below $24, expect simpler construction. Above $145, hand embroidery and premium silk should justify pricing.
 
 ## Pre-Purchase Questions for Sellers
 
@@ -440,4 +440,4 @@ Successful purchases follow this strategy:
 
 A well-chosen salwar kameez becomes a versatile wardrobe staple, worn repeatedly across seasons, occasions, and celebrations.
 
-Browse diverse salwar kameez selections on [PurvX.com](https://PurvX.com) for global options or [PurvX.in](https://PurvX.in) for India-specific designs with verified sizing and authentic craftsmanship.
+Browse diverse salwar kameez selections on marketplaces like PurvX for global options and India-specific designs with verified sizing and authentic craftsmanship.

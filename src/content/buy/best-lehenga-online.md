@@ -38,12 +38,12 @@ When reviewing online listings, specific language indicates quality:
 
 | Quality Marker | What It Means | Price Impact |
 |---|---|---|
-| "Pure silk" | 100% silk content | Higher (₹25,000+) |
-| "Silk blend" | 70-90% silk mixed fiber | Medium (₹15,000-25,000) |
-| "Chanderi silk" | Handwoven Indian silk from Madhya Pradesh | Premium (₹20,000+) |
-| "Art silk" | Polyester mimicking silk appearance | Lower (₹3,000-8,000) |
+| "Pure silk" | 100% silk content | Higher ($300+) |
+| "Silk blend" | 70-90% silk mixed fiber | Medium ($180-300) |
+| "Chanderi silk" | Handwoven Indian silk from Madhya Pradesh | Premium ($240+) |
+| "Art silk" | Polyester mimicking silk appearance | Lower ($36-100) |
 | "Handwoven" | Labor-intensive traditional weaving | Premium pricing |
-| "Naturally dyed" | Plant-based dyes instead of chemical | Premium (₹18,000+) |
+| "Naturally dyed" | Plant-based dyes instead of chemical | Premium ($220+) |
 
 ## Sizing and Fit: The Online Shopping Challenge
 
@@ -59,7 +59,7 @@ Lehenga sizing differs significantly from western clothing and varies considerab
 
 **Reputable sellers provide detailed measurements** in both inches and centimeters for each size variant. Review these thoroughly against your own measurements. If measurements aren't provided, contact the seller—legitimate merchants provide this information readily.
 
-**Customization options** are your safety net when buying online. Many sellers offer made-to-measure lehengas, which typically add 2-4 weeks to delivery but eliminate fitting risks. This service usually costs ₹2,000-5,000 additional but is worthwhile if you're purchasing an expensive piece.
+**Customization options** are your safety net when buying online. Many sellers offer made-to-measure lehengas, which typically add 2-4 weeks to delivery but eliminate fitting risks. This service usually costs $24-60 additional but is worthwhile if you're purchasing an expensive piece.
 
 **Return policies matter enormously** for online lehenga purchases. Verify that merchants accept returns for fit issues and offer full refunds or exchanges. Never purchase from sellers with no return window.
 
@@ -67,11 +67,11 @@ Lehenga sizing differs significantly from western clothing and varies considerab
 
 Embellishment quality separates excellent lehengas from mediocre ones.
 
-**Hand embroidery** (including zardozi, gota patti, and traditional techniques) represents the highest quality tier. Stitching is visible, each piece slightly varies, and the work is irreplaceable. This commands premium pricing (₹20,000+) but offers unmatched longevity and visual impact.
+**Hand embroidery** (including zardozi, gota patti, and traditional techniques) represents the highest quality tier. Stitching is visible, each piece slightly varies, and the work is irreplaceable. This commands premium pricing ($250+) but offers unmatched longevity and visual impact.
 
-**Machine embroidery** provides consistent, precise patterns. While less labor-intensive than hand work, quality machine embroidery remains intricate and durable. This represents mid-range pricing (₹10,000-20,000).
+**Machine embroidery** provides consistent, precise patterns. While less labor-intensive than hand work, quality machine embroidery remains intricate and durable. This represents mid-range pricing ($120-250).
 
-**Printed embellishment** (embroidery printed onto fabric) is the budget option. While visually appealing initially, printed work fades with washing and lacks dimensional appeal. These typically fall below ₹8,000.
+**Printed embellishment** (embroidery printed onto fabric) is the budget option. While visually appealing initially, printed work fades with washing and lacks dimensional appeal. These typically fall below $100.
 
 **Quality indicators for embellishment:**
 
@@ -87,12 +87,12 @@ Understanding lehenga pricing helps you identify genuine value versus false econ
 
 | Category | Price Range | Typical Features | Where to Buy |
 |---|---|---|---|
-| **Budget Casual** | ₹2,500-5,000 | Art silk, printed embroidery, basic construction | Amazon, Flipkart, generic online retailers |
-| **Mid-Range Party** | ₹8,000-15,000 | Silk blends, machine embroidery, moderate quality tailoring | Brand websites, established ethnic wear retailers |
-| **Premium Party** | ₹15,000-30,000 | Real silk, quality embroidery, superior construction | Designer boutiques, specialty ethnic retailers |
-| **Bridal/Statement** | ₹30,000-75,000+ | Pure silk, hand embroidery, custom tailoring available | Designer brands, made-to-order specialists |
+| **Budget Casual** | $30-60 | Art silk, printed embroidery, basic construction | General online retailers |
+| **Mid-Range Party** | $100-180 | Silk blends, machine embroidery, moderate quality tailoring | Brand websites, established ethnic wear retailers |
+| **Premium Party** | $180-360 | Real silk, quality embroidery, superior construction | Designer boutiques, specialty ethnic retailers |
+| **Bridal/Statement** | $360-900+ | Pure silk, hand embroidery, custom tailoring available | Designer brands, made-to-order specialists |
 
-**Value indicators**: A ₹10,000 lehenga should feature silk content (not pure art silk), quality embroidery you can observe in photos, reinforced seams, and a return policy. If it's significantly cheaper, scrutinize fabric and construction claims.
+**Value indicators**: A $120 lehenga should feature silk content (not pure art silk), quality embroidery you can observe in photos, reinforced seams, and a return policy. If it's significantly cheaper, scrutinize fabric and construction claims.
 
 ## Color Selection and Photography
 
@@ -123,7 +123,7 @@ Online color representation is notoriously unreliable. What appears burgundy on 
 
 Even the finest lehenga deteriorates quickly with improper care. Budget lehengas especially require thoughtful maintenance.
 
-**Professional dry cleaning** is essential for embellished and silk lehengas. Chemical dry cleaning removes oils from fabrics but prevents water damage to embellishment. Plan for ₹500-1,500 per cleaning.
+**Professional dry cleaning** is essential for embellished and silk lehengas. Chemical dry cleaning removes oils from fabrics but prevents water damage to embellishment. Plan for $6-18 per cleaning.
 
 **Hand washing** works for casual cotton lehengas. Use mild detergent, cool water, and gentle agitation. Air-dry completely before storing.
 
@@ -131,10 +131,10 @@ Even the finest lehenga deteriorates quickly with improper care. Budget lehengas
 
 **Seasonal storage** requires annual inspection. Check for any stains that set or embellishment that loosened during the off-season.
 
-A ₹5,000 lehenga with annual professional care might last 3-4 years of regular wear. A ₹30,000 piece with proper maintenance can serve for 8-10+ years.
+A $60 lehenga with annual professional care might last 3-4 years of regular wear. A $360 piece with proper maintenance can serve for 8-10+ years.
 
 ## Finding Your Perfect Lehenga Online
 
 The key to successful online lehenga shopping is matching expectations to category, understanding quality markers, and prioritizing sellers with transparent sizing and reasonable return policies. Whether you're seeking a statement bridal piece or a casual festival wear, the structure remains the same: clear communication, detailed measurements, and realistic expectations about online color representation.
 
-Browse quality options on [PurvX.com](https://PurvX.com) for global selections or [PurvX.in](https://PurvX.in) for India-specific lehenga collections with verified sizing and authentic reviews.
+Browse quality options on marketplaces like PurvX for global selections and India-specific lehenga collections with verified sizing and authentic reviews.

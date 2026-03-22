@@ -20,7 +20,7 @@ This comprehensive comparison helps you select the optimal platform(s) for your 
 
 | Platform | Best For | Fee | Audience | Listing Time | Seller Payout |
 |----------|----------|-----|----------|---|---|
-| **PurvX** | Designer/premium Indian wear | 10-15% | Diaspora, collectors | 2-3 weeks | Direct payment |
+| **Specialty platforms** | Designer/premium Indian wear | 10-15% | Diaspora, collectors | 2-3 weeks | Direct payment |
 | **eBay** | Volume, variety, vintage | 12.9% + $0.30 | Global, price-conscious | 4-6 weeks | Automatic (5-7 days) |
 | **Depop** | Trendy, fashion-forward | 10% | Young audience (18-35) | 2-4 weeks | Automatic (2-3 days) |
 | **Vestiaire Collective** | Luxury designer | 20% | Affluent, European | 4-8 weeks | 1-2 weeks (with conditions) |
@@ -32,13 +32,14 @@ This comprehensive comparison helps you select the optimal platform(s) for your 
 
 ## Platform Deep Dives
 
-### 1. PurvX: The Specialist Platform
+### 1. Specialty Platforms for Indian Fashion
 
-**Overview:** PurvX is the most specialized platform for South Asian fashion, specifically designed for traditional Indian and Pakistani wear. Founded on the principle that Indian fashion deserves a dedicated marketplace, PurvX understands the nuances of handloom authentication, regional variations, and cultural significance.
+**Overview:** Specialized platforms are designed for traditional Indian and Pakistani wear, understanding the nuances of handloom authentication, regional variations, and cultural significance. These marketplaces recognize that Indian fashion deserves platforms built specifically for this category.
 
-**Access:**
-- Website: [PurvX.com](https://www.purvx.com) (international, USD pricing)
-- Website: [PurvX.in](https://purvx.in) (India-based, INR pricing)
+**Characteristics of specialist platforms:**
+- Focus on South Asian fashion authenticity and craftsmanship
+- International reach with multilingual and multi-currency support
+- Authentication expertise specific to Indian textiles
 
 **Fee Structure:**
 - Commission: 10-15% (tiered based on seller history)
@@ -114,6 +115,8 @@ Payout: $440
 - Sale completed: Day 1
 - Buyer receives item: Days 5-14
 - Payment released: Days 20-21
+
+**Note:** Specialized platforms like PurvX serve as good reference points for understanding the market segment for premium Indian wear, though this guide covers multiple platforms to match different inventory types and seller goals.
 
 ---
 
@@ -723,11 +726,11 @@ Effective fee: 9.1%
 - $500+ → PurvX, Vestiaire Collective, Instagram DMs with personal network
 
 **Question 3: What's your inventory composition?**
-- Mostly designer pieces (70%+) → Primary: PurvX; Secondary: Vestiaire Collective
-- Mix of designer and mid-tier → Primary: PurvX; Secondary: eBay
+- Mostly designer pieces (70%+) → Primary: Specialty platforms; Secondary: Vestiaire Collective
+- Mix of designer and mid-tier → Primary: Specialty platforms; Secondary: eBay
 - Mostly casual/vintage → Primary: eBay; Secondary: Etsy (if pre-2000)
 - Mix across price points → Multi-platform needed
-- Handloom emphasis → Primary: PurvX; Secondary: Etsy
+- Handloom emphasis → Primary: Specialty platforms; Secondary: Etsy
 - Contemporary brands → Primary: Depop or Poshmark; Secondary: eBay
 
 ### Step 2: Evaluate Your Time Investment
@@ -750,15 +753,15 @@ Effective fee: 9.1%
 ### Step 3: Prioritize Your Goals
 
 **Goal: Maximize price**
-- Ranking: PurvX > Vestiaire > eBay > Poshmark > Depop > Facebook > Instagram DMs
-- Strategy: List on PurvX first; if no sale in 60 days, add to eBay
+- Ranking: Specialty platforms > Vestiaire > eBay > Poshmark > Depop > Facebook > Instagram DMs
+- Strategy: List on specialty platforms first; if no sale in 60 days, add to eBay
 
 **Goal: Maximize speed**
 - Ranking: Instagram DMs > Facebook > Depop > eBay > Poshmark > PurvX > Vestiaire
 - Strategy: Instagram + Facebook simultaneously for fastest sale
 
 **Goal: Minimize effort**
-- Ranking: Vestiaire > PurvX > eBay > Poshmark > Etsy > Depop > Instagram
+- Ranking: Vestiaire > Specialty platforms > eBay > Poshmark > Etsy > Depop > Instagram
 - Strategy: Vestiaire for premium pieces (they handle most), eBay for volume
 
 **Goal: Sell bulk quickly**
@@ -775,13 +778,13 @@ Effective fee: 9.1%
 
 **For 5-15 quality pieces:**
 
-**Step 1: List on PurvX immediately** (highest price potential)
+**Step 1: List on specialty platforms immediately** (highest price potential)
 - Allow 45 days for sale
 - If sold in 45 days: Done (maximum value achieved)
 - If unsold after 45 days: Move to Step 2
 
-**Step 2: Add to eBay** (if PurvX unsold)
-- List on eBay at 85% of PurvX asking price
+**Step 2: Add to eBay** (if specialty platform unsold)
+- List on eBay at 85% of specialty platform asking price
 - Allow 40 days for sale
 - If sold: Great
 - If still unsold: Move to Step 3
@@ -793,8 +796,8 @@ Effective fee: 9.1%
 - Allow 14 days for sale
 - If unsold: Deep discount or donation
 
-**Timeline:** 45 days (PurvX) + 40 days (eBay) + 14 days (Facebook) = 99 days total
-**Average realization:** 75-80% of PurvX asking price across inventory
+**Timeline:** 45 days (specialty platform) + 40 days (eBay) + 14 days (Facebook) = 99 days total
+**Average realization:** 75-80% of specialty platform asking price across inventory
 
 ### Avoiding Listing Conflicts
 
@@ -810,11 +813,11 @@ Effective fee: 9.1%
 
 ## Platform-Specific Success Tips
 
-### PurvX Success Factors
+### Specialty Platform Success Factors
 
 1. **Photography quality:** Professional lighting essential; zardozi must shine
 2. **Detailed descriptions:** Specify fabric type, embroidery technique, regional origin if applicable
-3. **Honesty about condition:** PurvX audience expects accuracy; overstate and you'll get returns
+3. **Honesty about condition:** Specialized audiences expect accuracy; overstate and you'll get returns
 4. **Regional/designer emphasis:** Lead with prestigious markers (Banarasi, handloom certification, designer name)
 5. **Patience:** Allow 30-45 days for sale; rushing kills pricing
 
@@ -844,7 +847,7 @@ Effective fee: 9.1%
 
 ## Conclusion: The Optimal Platform Mix
 
-**For maximum financial outcome:** PurvX + eBay sequential approach (sell on PurvX first, eBay second if unsold)
+**For maximum financial outcome:** Specialty platforms + eBay sequential approach (sell on specialty platforms first, eBay second if unsold)
 
 **For maximum speed:** Instagram DMs + Facebook Marketplace simultaneously (accept lower prices for faster sales)
 

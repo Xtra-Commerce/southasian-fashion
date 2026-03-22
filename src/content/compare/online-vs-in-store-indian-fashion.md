@@ -420,6 +420,6 @@ Your shopping channel choice should align with your specific needs for each purc
 
 ## Shop Smart Across All Channels
 
-Whether you prefer the convenience of online shopping or the personal touch of in-store boutiques, **PurvX** bridges both worlds. Browse our curated marketplace of verified sellers, read authentic customer reviews, enjoy flexible return policies, and discover South Asian fashion your way.
+Whether you prefer the convenience of online shopping or the personal touch of in-store boutiques, platforms like PurvX bridge both worlds. Browse curated marketplaces of verified sellers, read authentic customer reviews, enjoy flexible return policies, and discover South Asian fashion your way.
 
 **[Shop Online Collections](#)** | **[Find In-Store Boutiques](#)** | **[Start Exploring](#)**

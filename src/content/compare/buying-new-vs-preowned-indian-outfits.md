@@ -18,23 +18,23 @@ The choice between purchasing new and preowned South Asian fashion represents mo
 
 | Item Type | New Price | Preowned Price | Savings |
 |-----------|-----------|----------------|---------|
-| Designer Saree | ₹40,000-₹100,000 | ₹18,000-₹50,000 | 50-55% |
-| Premium Saree | ₹10,000-₹30,000 | ₹5,000-₹15,000 | 40-50% |
-| Designer Lehenga | ₹80,000-₹200,000 | ₹35,000-₹90,000 | 50-55% |
-| Bridal Lehenga | ₹150,000-₹500,000 | ₹60,000-₹200,000 | 50-60% |
-| Contemporary Suit | ₹5,000-₹15,000 | ₹2,500-₹8,000 | 40-50% |
-| Embroidered Suit | ₹10,000-₹35,000 | ₹4,000-₹15,000 | 50-60% |
+| Designer Saree | $480-$1,200 | $215-$600 | 50-55% |
+| Premium Saree | $120-$360 | $60-$180 | 40-50% |
+| Designer Lehenga | $960-$2,400 | $420-$1,080 | 50-55% |
+| Bridal Lehenga | $1,800-$6,000 | $720-$2,400 | 50-60% |
+| Contemporary Suit | $60-$180 | $30-$100 | 40-50% |
+| Embroidered Suit | $120-$420 | $50-$180 | 50-60% |
 
-**Key Insight:** Preowned pieces typically cost 40-60% less than new equivalents. This means a ₹100,000 designer lehenga becomes accessible at ₹40,000-₹50,000. This pricing differential allows significant wardrobe expansion or investing in premium quality at new-piece budgets.
+**Key Insight:** Preowned pieces typically cost 40-60% less than new equivalents. This means a $1,200 designer lehenga becomes accessible at $480-$600. This pricing differential allows significant wardrobe expansion or investing in premium quality at new-piece budgets.
 
 ### Cost Per Wear
 
 Calculating cost per wear reveals the true economic value of each option:
 
-- **New Luxury Piece at ₹100,000, worn 10 times:** ₹10,000 per wear
-- **New Luxury Piece at ₹100,000, worn 25 times:** ₹4,000 per wear
-- **Preowned Luxury Piece at ₹40,000, worn 10 times:** ₹4,000 per wear
-- **Preowned Luxury Piece at ₹40,000, worn 25 times:** ₹1,600 per wear
+- **New Luxury Piece at $1,200, worn 10 times:** $120 per wear
+- **New Luxury Piece at $1,200, worn 25 times:** $50 per wear
+- **Preowned Luxury Piece at $480, worn 10 times:** $48 per wear
+- **Preowned Luxury Piece at $480, worn 25 times:** $20 per wear
 
 Preowned pieces immediately reduce cost per wear, even when worn equal numbers of times as new pieces. For occasion wear (worn 3-5 times), preowned pieces are significantly more economical.
 
@@ -230,9 +230,9 @@ Preowned pieces offer different emotional benefits:
 
 **Choose Preowned Options for:**
 
-1. **Designer Access** - Experience luxury designer pieces at accessible prices. A ₹100,000 designer saree at ₹45,000 justifies preowned purchase.
+1. **Designer Access** - Experience luxury designer pieces at accessible prices. A $1,200 designer saree at $540 justifies preowned purchase.
 
-2. **Budget-Conscious Expansion** - Your ₹50,000 budget accesses significantly more and higher quality with preowned options.
+2. **Budget-Conscious Expansion** - Your $600 budget accesses significantly more and higher quality with preowned options.
 
 3. **Occasion Wear** - For pieces worn 2-5 times, preowned cost-per-wear is unbeatable.
 
@@ -281,8 +281,8 @@ The most financially and environmentally wise approach builds core wardrobe piec
 
 ---
 
-## Discover Smart Shopping on PurvX
+## Discover Smart Shopping on Marketplaces
 
-Whether you're ready to invest in new pieces or explore the incredible value of preowned South Asian fashion, **PurvX** offers a secure marketplace with verified sellers, detailed condition assessments, and authentic buyer reviews. Access designer pieces at accessible prices, discover vintage treasures, and shop with confidence.
+Whether you're ready to invest in new pieces or explore the incredible value of preowned South Asian fashion, platforms like PurvX offer secure marketplaces with verified sellers, detailed condition assessments, and authentic buyer reviews. Access designer pieces at accessible prices, discover vintage treasures, and shop with confidence.
 
 **[Shop Preowned Indian Fashion](#)** | **[Explore New Collections](#)** | **[Start Your Search](#)**

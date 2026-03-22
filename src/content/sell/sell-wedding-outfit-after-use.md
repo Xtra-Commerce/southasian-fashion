@@ -253,13 +253,13 @@ Final: $468 (78% retention for handloom)
 
 | Platform | Best For | Pricing | Audience | Velocity |
 |----------|----------|---------|----------|----------|
-| **PurvX** | Designer/premium | Best prices (60-70%) | Collectors, diaspora | 25-35 days |
+| **Specialty platforms** | Designer/premium | Best prices (60-70%) | Collectors, diaspora | 25-35 days |
 | **eBay** | Volume/variety | Good (50-60%) | Global, price-conscious | 30-45 days |
 | **Depop** | Fashion-forward | Good (50-60%) | Young, trendy | 25-40 days |
 | **Instagram DMs** | Direct sales | Best (highest margin) | Personal network | 15-30 days |
 | **Vestiaire Collective** | Luxury/designer | Best for premium (60-75%) | Affluent, European | 35-50 days |
 
-**PurvX advantage:** [PurvX.com](https://www.purvx.com) and [PurvX.in](https://purvx.in) audiences specifically seek wedding wear and understand premium pricing for Indian textiles. You'll achieve 15-20% higher prices than generic platforms for designer and handloom pieces.
+**Platform advantage:** Marketplaces like PurvX offer specialized audiences that specifically seek wedding wear and understand premium pricing for Indian textiles. You'll achieve 15-20% higher prices on platforms catering to Indian fashion compared to generic resale sites for designer and handloom pieces.
 
 ### Listing Strategy for Wedding Outfits
 

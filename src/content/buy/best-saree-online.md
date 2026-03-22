@@ -33,7 +33,7 @@ Originating from Varanasi, Banarasi sarees are woven from silk with gold and sil
 - Silk that feels supple, not stiff
 - Pure silk backing (not silk-sateen blends used for cost reduction)
 
-**Price range**: ₹8,000-50,000+ depending on zari purity and silk quality. Authentic handwoven pieces exceed ₹30,000.
+**Price range**: $100-600+ depending on zari purity and silk quality. Authentic handwoven pieces exceed $360.
 
 ### Kanjivaram/Kanchipuram Sarees
 These South Indian sarees from Tamil Nadu are among the most prestigious. Woven from mulberry silk with gold zari, Kanjivaram sarees feature intricate patterns created through traditional pit loom weaving. They're exceptionally heavy, durable, and suitable for formal occasions.
@@ -44,7 +44,7 @@ These South Indian sarees from Tamil Nadu are among the most prestigious. Woven 
 - Pure silk content (test by the burn test in photos if provided)
 - Zari quality (observe for consistent color and intricacy)
 
-**Price range**: ₹12,000-60,000+ for authentic pieces. Budget versions exist at ₹5,000-8,000 using silk blends.
+**Price range**: $145-720+ for authentic pieces. Budget versions exist at $60-100 using silk blends.
 
 ### Chanderi Sarees
 Woven in Madhya Pradesh, Chanderi sarees combine silk and cotton through traditional handweaving. These are lighter than Banarasi or Kanjivaram sarees but more elaborate than simple cotton. Chanderi sarees feature subtle patterns and exceptional draping qualities.
@@ -55,7 +55,7 @@ Woven in Madhya Pradesh, Chanderi sarees combine silk and cotton through traditi
 - Traditional geometric or floral patterns
 - Silk-cotton blend feeling supple and light
 
-**Price range**: ₹4,000-15,000 depending on silk content and embellishment.
+**Price range**: $48-180 depending on silk content and embellishment.
 
 ### Tussar Silk Sarees
 Tussar silk comes from wild silkworms and features a natural, slightly coarse texture with warm, earthy tones (golds, browns, rust). These sarees drape beautifully, are lighter than Banarasi sarees, and work well for casual and party occasions.
@@ -65,7 +65,7 @@ Tussar silk comes from wild silkworms and features a natural, slightly coarse te
 - Smooth weave without overly stiff areas
 - Subtle sheen without artificial glossiness
 
-**Price range**: ₹3,000-12,000 depending on purity and embellishment.
+**Price range**: $36-145 depending on purity and embellishment.
 
 ### Paithani Sarees
 These traditional sarees from Maharashtra feature handwoven silk with distinctive peacock pallu borders. Paithani sarees are collector's items featuring intricate work and symbolic patterns.
@@ -76,18 +76,18 @@ These traditional sarees from Maharashtra feature handwoven silk with distinctiv
 - Weight indicating pure silk content
 - Regional authenticity (purchase from recognized Paithani weaver communities when possible)
 
-**Price range**: ₹8,000-40,000+ for genuine handwoven pieces.
+**Price range**: $100-480+ for genuine handwoven pieces.
 
 ## Fabric Quality Assessment for Online Purchases
 
 | Fabric Type | Characteristics | Best For | Price Range | Care Level |
 |---|---|---|---|---|
-| **Pure Silk** | Lustrous, drapes beautifully, ages well | Formal, bridal, investment pieces | ₹15,000-70,000+ | High (dry clean) |
-| **Silk Blends (70-80%)** | Good sheen, easier care, maintains durability | Party, festive wear | ₹8,000-20,000 | Medium (can hand wash) |
-| **Cotton Silk (50-50)** | Breathable, lightweight, elegant | Summer, casual, daily wear | ₹4,000-12,000 | Medium (gentle wash) |
-| **Pure Cotton** | Breathable, practical, cool | Everyday, summer, office | ₹2,000-8,000 | Low (machine washable) |
-| **Linen Blends** | Structured drape, minimalist aesthetic | Contemporary, casual | ₹3,000-10,000 | Low (machine washable) |
-| **Art Silk (Polyester)** | Affordable shine, low maintenance | Budget, casual | ₹1,500-5,000 | Very low |
+| **Pure Silk** | Lustrous, drapes beautifully, ages well | Formal, bridal, investment pieces | $180-840+ | High (dry clean) |
+| **Silk Blends (70-80%)** | Good sheen, easier care, maintains durability | Party, festive wear | $100-240 | Medium (can hand wash) |
+| **Cotton Silk (50-50)** | Breathable, lightweight, elegant | Summer, casual, daily wear | $48-145 | Medium (gentle wash) |
+| **Pure Cotton** | Breathable, practical, cool | Everyday, summer, office | $24-100 | Low (machine washable) |
+| **Linen Blends** | Structured drape, minimalist aesthetic | Contemporary, casual | $36-120 | Low (machine washable) |
+| **Art Silk (Polyester)** | Affordable shine, low maintenance | Budget, casual | $18-60 | Very low |
 
 ## Identifying Genuine Quality in Online Listings
 
@@ -166,13 +166,13 @@ When examining online photos, look for color consistency. Uneven color or visibl
 
 | Price Point | Expected Quality | Realistic Features | Appropriate Occasions |
 |---|---|---|---|
-| **₹1,500-3,000** | Budget quality | Synthetic materials, printed design | Casual, daily wear |
-| **₹3,000-7,000** | Acceptable quality | Cotton or cotton blends, basic embroidery | Casual, festivals, office |
-| **₹7,000-15,000** | Good quality | Silk blends, quality weaving, moderate embellishment | Parties, celebrations |
-| **₹15,000-30,000** | Premium quality | High silk content, hand work, traditional construction | Formal, special occasions |
-| **₹30,000+** | Investment pieces | Pure silk, extensive hand work, regional authenticity | Bridal, significant milestones |
+| **$18-36** | Budget quality | Synthetic materials, printed design | Casual, daily wear |
+| **$36-85** | Acceptable quality | Cotton or cotton blends, basic embroidery | Casual, festivals, office |
+| **$85-180** | Good quality | Silk blends, quality weaving, moderate embellishment | Parties, celebrations |
+| **$180-360** | Premium quality | High silk content, hand work, traditional construction | Formal, special occasions |
+| **$360+** | Investment pieces | Pure silk, extensive hand work, regional authenticity | Bridal, significant milestones |
 
-**Value assessment**: At ₹5,000, expect silk blend content (not pure silk), reasonable color fastness, and standard weaving quality. Below ₹3,000, synthetic materials and printed design should be expected. Above ₹25,000, genuine silk content, hand work, and regional authenticity become essential to justify pricing.
+**Value assessment**: At $60, expect silk blend content (not pure silk), reasonable color fastness, and standard weaving quality. Below $36, synthetic materials and printed design should be expected. Above $300, genuine silk content, hand work, and regional authenticity become essential to justify pricing.
 
 ## Specific Questions for Online Sellers
 
@@ -200,9 +200,9 @@ Legitimate sellers provide detailed answers. Those offering vague responses or r
 
 ## Care Extends Longevity
 
-A ₹8,000 silk saree with proper care lasts 15+ years. Poor care ruins even expensive pieces in one season.
+A $100 silk saree with proper care lasts 15+ years. Poor care ruins even expensive pieces in one season.
 
-**Professional dry cleaning**: Essential for silk and embellished sarees. Use only experienced cleaners familiar with sarees.
+**Professional dry cleaning**: Essential for silk and embellished sarees. Use only experienced cleaners familiar with sarees. Budget $6-18 per cleaning.
 
 **Storage**: Breathable cotton bags in dark, cool spaces. Never plastic. Neem leaves or cedar blocks prevent insect damage.
 
@@ -212,6 +212,6 @@ A ₹8,000 silk saree with proper care lasts 15+ years. Poor care ruins even exp
 
 ## Investing in Your First Saree
 
-Your first online saree purchase should balance quality expectations with budget constraints. A ₹5,000-8,000 silk blend or quality cotton saree from an established retailer provides excellent value, wears beautifully, and demonstrates whether you enjoy saree wearing before investing in premium pieces.
+Your first online saree purchase should balance quality expectations with budget constraints. A $60-100 silk blend or quality cotton saree from an established retailer provides excellent value, wears beautifully, and demonstrates whether you enjoy saree wearing before investing in premium pieces.
 
-Explore authentic saree selections on [PurvX.com](https://PurvX.com) for international access or [PurvX.in](https://PurvX.in) for India-specific collections with verified authenticity and regional sourcing information.
+Explore authentic saree selections on marketplaces like PurvX for international access and India-specific collections with verified authenticity and regional sourcing information.

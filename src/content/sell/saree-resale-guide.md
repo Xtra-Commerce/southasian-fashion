@@ -460,15 +460,15 @@ Fall: Traditional
 **Care Instructions:** (2-3 lines)
 "Dry clean only. Do not machine wash. Store in muslin cloth away from direct sunlight. Do not iron directly on silk; use pressing cloth if needed."
 
-## Part 8: Pricing on PurvX for Saree Excellence
+## Part 8: Pricing on Specialized Platforms for Saree Excellence
 
-**PurvX (at [PurvX.com](https://www.purvx.com) and [PurvX.in](https://purvx.in)) offers distinct advantages for saree sales:**
+**Marketplaces like PurvX offer distinct advantages for saree sales:**
 
 1. **Specialized audience** understands handloom authentication and regional varieties
 2. **Premium pricing** achieved for traditional sarees (15-25% higher than general platforms)
 3. **International reach** with buyers specifically seeking authentic Indian textiles
-4. **Simplified authenticity verification** process reduces buyer skepticism
-5. **Faster sales** for regional and vintage pieces (30-50% faster)
+4. **Streamlined authenticity processes** that reduce buyer skepticism
+5. **Faster sales** for regional and vintage pieces (30-50% faster compared to general resale sites)
 
 ## Conclusion
 

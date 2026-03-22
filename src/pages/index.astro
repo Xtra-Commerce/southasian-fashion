@@ -1,9 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import HeroSection from '../components/HeroSection.astro';
 import ArticleCard from '../components/ArticleCard.astro';
-import CTABlock from '../components/CTABlock.astro';
-import PurvXShopSection from '../components/PurvXShopSection.astro';
+import PurvXListings from '../components/PurvXListings.astro';
 import { getHomepageHeroImage } from '../utils/images';
 import { getCollection } from 'astro:content';
 
@@ -23,293 +21,661 @@ const allArticles = allCollections.flat()
 
 const featured = allArticles.filter(a => a.data.featured).slice(0, 3);
 const weddingGuides = allArticles.filter(a => a.data.category === 'wedding').slice(0, 4);
-const buyingGuides = allArticles.filter(a => a.data.category === 'buy').slice(0, 4);
-const sellingGuides = allArticles.filter(a => a.data.category === 'sell').slice(0, 3);
+const buyingGuides = allArticles.filter(a => a.data.category === 'buy').slice(0, 3);
 const learnArticles = allArticles.filter(a => a.data.category === 'learn').slice(0, 4);
 ---
 <BaseLayout title="Home">
-  <!-- Hero -->
-  <HeroSection
-    title="The Authority on South Asian Fashion"
-    subtitle="Expert guides for buying, wearing, and selling South Asian outfits. From wedding lehengas to everyday sarees, make confident fashion decisions."
-    label="SouthAsian.Fashion"
-    size="large"
-    backgroundImage={heroImage.url}
-    backgroundAlt={heroImage.alt}
-  >
-    <div class="hero-actions" style="margin-top:2rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-      <a href="/wedding-guides" class="btn btn--burgundy">Wedding Guides <span class="arrow">&rarr;</span></a>
-      <a href="/buying" class="btn btn--outline">Start Shopping <span class="arrow">&rarr;</span></a>
+  <!-- Full-Bleed Hero with Dramatic Serif Headline -->
+  <section class="hero">
+    <div class="hero__background" style={`background-image: url('${heroImage.url}'); background-alt: ${heroImage.alt};`}></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1 class="hero__headline">The Authority on South Asian Fashion</h1>
+      <p class="hero__subtitle">Expert editorial guides for buying, wearing, and celebrating South Asian style</p>
     </div>
-  </HeroSection>
+  </section>
 
-  <!-- Featured Guides -->
+  <!-- Featured Editorial Section with Magazine Grid -->
   {featured.length > 0 && (
-    <section class="section">
+    <section class="section featured-section">
       <div class="container">
-        <div class="section-header">
-          <span class="label">Editor's Picks</span>
-          <h2 class="section-header__title">Featured Guides</h2>
-        </div>
-        <div class="grid grid--3">
-          {featured.map(article => (
-            <ArticleCard
-              title={article.data.title}
-              excerpt={article.data.description}
-              category={article.data.category}
-              slug={article.id}
-              tags={article.data.tags}
-            />
+        <div class="section-label">Editor's Selection</div>
+        <div class="editorial-grid">
+          {featured.map((article, index) => (
+            index === 0 ? (
+              <a href={`/${article.data.category}/${article.id}`} class="editorial-grid__item editorial-grid__item--featured">
+                <article class="featured-card">
+                  <img src={article.data.image || ''} alt={article.data.title} class="featured-card__image" />
+                  <div class="featured-card__content">
+                    <span class="featured-card__category">{article.data.category.toUpperCase()}</span>
+                    <h2 class="featured-card__title">{article.data.title}</h2>
+                    <p class="featured-card__excerpt">{article.data.description}</p>
+                  </div>
+                </article>
+              </a>
+            ) : (
+              <a href={`/${article.data.category}/${article.id}`} class="editorial-grid__item">
+                <article class="card">
+                  <img src={article.data.image || ''} alt={article.data.title} class="card__image" />
+                  <div class="card__body">
+                    <span class="card__category">{article.data.category.toUpperCase()}</span>
+                    <h3 class="card__title">{article.data.title}</h3>
+                    <p class="card__excerpt">{article.data.description}</p>
+                  </div>
+                </article>
+              </a>
+            )
           ))}
         </div>
       </div>
     </section>
   )}
 
-  <!-- Category Navigation -->
+  <hr class="section-divider" />
+
+  <!-- Sophisticated Category Navigation Strip -->
   <section class="section categories-section">
     <div class="container">
-      <div class="section-header" style="text-align:center;">
-        <span class="label">Explore</span>
-        <h2 class="section-header__title">Find What You Need</h2>
-      </div>
-      <div class="categories-grid">
-        <a href="/wedding-guides" class="category-tile category-tile--wedding">
-          <span class="category-tile__icon">&#10022;</span>
-          <h3 class="category-tile__title">Wedding Guides</h3>
-          <p class="category-tile__text">What to wear, event guides, and cultural tips for South Asian weddings</p>
+      <nav class="category-strip">
+        <a href="/wedding-guides" class="category-link">
+          <span class="category-link__text">WEDDING</span>
         </a>
-        <a href="/buying" class="category-tile category-tile--buy">
-          <span class="category-tile__icon">&#9830;</span>
-          <h3 class="category-tile__title">Buying Guides</h3>
-          <p class="category-tile__text">Find the perfect lehenga, saree, sherwani, or kurta with expert advice</p>
+        <a href="/buying" class="category-link">
+          <span class="category-link__text">BUYING</span>
         </a>
-        <a href="/selling" class="category-tile category-tile--sell">
-          <span class="category-tile__icon">&#9733;</span>
-          <h3 class="category-tile__title">Selling Guides</h3>
-          <p class="category-tile__text">Sell your outfits, understand resale value, and find the right platforms</p>
+        <a href="/selling" class="category-link">
+          <span class="category-link__text">RESALE</span>
         </a>
-        <a href="/learn" class="category-tile category-tile--learn">
-          <span class="category-tile__icon">&#10047;</span>
-          <h3 class="category-tile__title">Learn & Discover</h3>
-          <p class="category-tile__text">Fabrics, embroidery, regional styles, and the rich history of South Asian fashion</p>
+        <a href="/learn" class="category-link">
+          <span class="category-link__text">CULTURE & LEARN</span>
         </a>
-      </div>
+      </nav>
     </div>
   </section>
 
-  <!-- Wedding Guides -->
+  <hr class="section-divider" />
+
+  <!-- Wedding Section: Large Hero + 2 Side Cards -->
   {weddingGuides.length > 0 && (
-    <section class="section">
+    <section class="section wedding-section">
       <div class="container">
-        <div class="section-header">
-          <span class="label">Wedding Season</span>
-          <h2 class="section-header__title">Wedding Guides</h2>
-          <a href="/wedding-guides" class="btn btn--ghost">View all <span class="arrow">&rarr;</span></a>
+        <div class="section-label">Wedding Season</div>
+        <h2 class="section-title">Wedding Guides</h2>
+
+        <div class="wedding-grid">
+          {weddingGuides[0] && (
+            <a href={`/wedding/${weddingGuides[0].id}`} class="wedding-hero">
+              <img src={weddingGuides[0].data.image || ''} alt={weddingGuides[0].data.title} class="wedding-hero__image" />
+              <div class="wedding-hero__content">
+                <h3 class="wedding-hero__title">{weddingGuides[0].data.title}</h3>
+                <p class="wedding-hero__excerpt">{weddingGuides[0].data.description}</p>
+              </div>
+            </a>
+          )}
+
+          <div class="wedding-side">
+            {weddingGuides.slice(1, 3).map(article => (
+              <a href={`/wedding/${article.id}`} class="card card--compact">
+                <img src={article.data.image || ''} alt={article.data.title} class="card__image" />
+                <div class="card__body">
+                  <h4 class="card__title card__title--small">{article.data.title}</h4>
+                  <p class="card__excerpt card__excerpt--small">{article.data.description}</p>
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
-        <div class="grid grid--4">
-          {weddingGuides.map(article => (
-            <ArticleCard
-              title={article.data.title}
-              excerpt={article.data.description}
-              category={article.data.category}
-              slug={article.id}
-              tags={article.data.tags}
-            />
-          ))}
-        </div>
+
+        <a href="/wedding-guides" class="view-all-link">View all wedding guides →</a>
       </div>
     </section>
   )}
 
-  <!-- Mid-page CTA -->
-  <section class="section--sm">
-    <div class="container container--narrow">
-      <CTABlock type="buy" variant="dark" />
-    </div>
-  </section>
+  <hr class="section-divider" />
 
-  <!-- Buying Guides -->
+  <!-- Buying Section: Standard 3-Column Grid -->
   {buyingGuides.length > 0 && (
     <section class="section">
       <div class="container">
-        <div class="section-header">
-          <span class="label">Shopping</span>
-          <h2 class="section-header__title">Buying Guides</h2>
-          <a href="/buying" class="btn btn--ghost">View all <span class="arrow">&rarr;</span></a>
-        </div>
-        <div class="grid grid--4">
-          {buyingGuides.map(article => (
-            <ArticleCard
-              title={article.data.title}
-              excerpt={article.data.description}
-              category={article.data.category}
-              slug={article.id}
-              tags={article.data.tags}
-            />
-          ))}
-        </div>
-      </div>
-    </section>
-  )}
+        <div class="section-label">Shopping Guide</div>
+        <h2 class="section-title">Buying Guides</h2>
 
-  <!-- Selling Guides -->
-  {sellingGuides.length > 0 && (
-    <section class="section">
-      <div class="container">
-        <div class="section-header">
-          <span class="label">Resale & Sustainability</span>
-          <h2 class="section-header__title">Selling Guides</h2>
-          <a href="/selling" class="btn btn--ghost">View all <span class="arrow">&rarr;</span></a>
-        </div>
         <div class="grid grid--3">
-          {sellingGuides.map(article => (
-            <ArticleCard
-              title={article.data.title}
-              excerpt={article.data.description}
-              category={article.data.category}
-              slug={article.id}
-              tags={article.data.tags}
-            />
+          {buyingGuides.map(article => (
+            <a href={`/buy/${article.id}`} class="card">
+              <img src={article.data.image || ''} alt={article.data.title} class="card__image" />
+              <div class="card__body">
+                <span class="card__category">BUYING</span>
+                <h3 class="card__title">{article.data.title}</h3>
+                <p class="card__excerpt">{article.data.description}</p>
+              </div>
+            </a>
           ))}
         </div>
+
+        <a href="/buying" class="view-all-link">View all buying guides →</a>
       </div>
     </section>
   )}
 
-  <!-- Learn -->
+  <hr class="section-divider" />
+
+  <!-- Learning Section: 2-Column with Text-Heavy Cards (No Images) -->
   {learnArticles.length > 0 && (
-    <section class="section">
+    <section class="section learn-section">
       <div class="container">
-        <div class="section-header">
-          <span class="label">Culture & Education</span>
-          <h2 class="section-header__title">Learn About South Asian Fashion</h2>
-          <a href="/learn" class="btn btn--ghost">View all <span class="arrow">&rarr;</span></a>
-        </div>
-        <div class="grid grid--4">
-          {learnArticles.map(article => (
-            <ArticleCard
-              title={article.data.title}
-              excerpt={article.data.description}
-              category={article.data.category}
-              slug={article.id}
-              tags={article.data.tags}
-            />
+        <div class="section-label">Culture & Education</div>
+        <h2 class="section-title">Learn About South Asian Fashion</h2>
+
+        <div class="learn-grid">
+          {learnArticles.slice(0, 4).map(article => (
+            <a href={`/learn/${article.id}`} class="learn-card">
+              <span class="learn-card__category">LEARN</span>
+              <h3 class="learn-card__title">{article.data.title}</h3>
+              <p class="learn-card__excerpt">{article.data.description}</p>
+            </a>
           ))}
         </div>
+
+        <a href="/learn" class="view-all-link">Explore more →</a>
       </div>
     </section>
   )}
 
-  <!-- Shop PurvX Sections -->
-  <section class="section">
-    <div class="container">
-      <PurvXShopSection
-        sectionKey="wedding"
-        title="Shop Wedding Outfits on PurvX"
-        subtitle="Stunning lehengas, sarees, and sherwanis — preowned luxury at a fraction of retail"
-      />
-    </div>
+  <hr class="section-divider" />
+
+  <!-- PurvX Listings at Bottom -->
+  <section class="section purvx-section">
+    <PurvXListings category="bridal" />
   </section>
 
-  <section class="section" style="background:var(--color-ivory);">
-    <div class="container">
-      <PurvXShopSection
-        sectionKey="saree"
-        title="Browse Saree Collections"
-        subtitle="From Banarasi silk to Kanjivaram — find your perfect saree"
-      />
-    </div>
-  </section>
-
-  <!-- Bottom CTA -->
+  <!-- Simple Footer Explore Link -->
   <section class="section--sm">
     <div class="container container--narrow">
-      <CTABlock type="sell" variant="light" />
+      <div class="explore-footer">
+        <p><a href="/buying" class="explore-link">Explore PurvX Marketplace</a></p>
+      </div>
     </div>
   </section>
 </BaseLayout>
 
 <style>
-  .section-header {
+  /* ============================================
+     HERO SECTION - Full-Bleed Editorial Hero
+     ============================================ */
+
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
     display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: var(--space-md);
-    margin-bottom: var(--space-2xl);
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: calc(var(--header-height) * -1);
+    padding-top: var(--header-height);
   }
 
-  .section-header .label {
+  .hero__background {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(17, 17, 17, 0.35);
+  }
+
+  .hero__content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 900px;
+    padding: 0 var(--gutter);
+  }
+
+  .hero__headline {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 10vw, 6rem);
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: white;
+    margin-bottom: var(--space-xl);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .hero__subtitle {
+    font-family: var(--font-heading);
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 0.02em;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  /* ============================================
+     SECTION LABELS & TITLES
+     ============================================ */
+
+  .section-label {
+    font-family: var(--font-heading);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-text-light);
+    margin-bottom: var(--space-md);
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-3xl);
+    line-height: 1.1;
+  }
+
+  /* ============================================
+     FEATURED EDITORIAL GRID
+     ============================================ */
+
+  .featured-section {
+    padding-top: var(--space-4xl);
+  }
+
+  .featured-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: white;
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+    transition: all var(--duration-normal) var(--ease-out);
+    text-decoration: none;
+  }
+
+  .featured-card:hover {
+    box-shadow: var(--shadow-lg);
+  }
+
+  .featured-card__image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .featured-card__content {
+    padding: var(--space-2xl) var(--space-2xl) var(--space-2xl) var(--space-2xl);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .featured-card__category {
+    font-family: var(--font-heading);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-saffron);
+    margin-bottom: var(--space-md);
+  }
+
+  .featured-card__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-lg);
+    line-height: 1.2;
+  }
+
+  .featured-card__excerpt {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+    letter-spacing: 0.3px;
+  }
+
+  /* ============================================
+     CATEGORY NAVIGATION STRIP
+     ============================================ */
+
+  .categories-section {
+    background: transparent;
+    padding: var(--space-2xl) 0;
+  }
+
+  .category-strip {
+    display: flex;
+    gap: var(--space-2xl);
+    padding: var(--space-lg) 0;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    flex-wrap: wrap;
+  }
+
+  .category-link {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: var(--space-sm);
+  }
+
+  .category-link__text {
+    font-family: var(--font-display);
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--color-charcoal);
+    display: block;
+    transition: all var(--duration-normal) var(--ease-out);
+  }
+
+  .category-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--color-charcoal);
+    transition: width var(--duration-normal) var(--ease-out);
+  }
+
+  .category-link:hover::after {
     width: 100%;
   }
 
-  .section-header__title {
-    font-family: var(--font-display);
-    font-size: clamp(1.5rem, 3vw, 2.25rem);
-    font-weight: 400;
-    flex: 1;
+  .category-link:hover .category-link__text {
+    color: var(--color-saffron);
   }
 
-  .categories-section {
-    background: var(--color-ivory);
+  /* ============================================
+     WEDDING SECTION - Hero + Side Cards
+     ============================================ */
+
+  .wedding-section {
+    padding-top: var(--space-4xl);
   }
 
-  .categories-grid {
+  .wedding-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: var(--space-lg);
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-2xl);
+    margin-bottom: var(--space-3xl);
   }
 
-  .category-tile {
+  .wedding-hero {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    background: white;
+    border: 1px solid var(--color-border);
+    transition: all var(--duration-normal) var(--ease-out);
+  }
+
+  .wedding-hero:hover {
+    box-shadow: var(--shadow-lg);
+  }
+
+  .wedding-hero__image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--duration-normal) var(--ease-out);
+  }
+
+  .wedding-hero:hover .wedding-hero__image {
+    transform: scale(1.02);
+  }
+
+  .wedding-hero__content {
+    padding: var(--space-2xl);
+  }
+
+  .wedding-hero__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-lg);
+    line-height: 1.2;
+  }
+
+  .wedding-hero__excerpt {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+    letter-spacing: 0.3px;
+  }
+
+  .wedding-side {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xl);
+  }
+
+  .card--compact {
     display: block;
     background: white;
-    padding: var(--space-2xl) var(--space-xl);
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--color-border-light);
-    text-align: center;
+    border: 1px solid var(--color-border);
+    overflow: hidden;
     text-decoration: none;
     transition: all var(--duration-normal) var(--ease-out);
   }
 
-  .category-tile:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
-    border-color: transparent;
+  .card--compact:hover {
+    box-shadow: var(--shadow-md);
   }
 
-  .category-tile__icon {
-    display: block;
-    font-size: 2rem;
+  .card__title--small {
+    font-size: 1.1rem;
     margin-bottom: var(--space-md);
+  }
+
+  .card__excerpt--small {
+    font-size: 0.9rem;
+  }
+
+  /* ============================================
+     LEARN SECTION - Text-Heavy Cards
+     ============================================ */
+
+  .learn-section {
+    padding-top: var(--space-4xl);
+  }
+
+  .learn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-2xl);
+    margin-bottom: var(--space-3xl);
+  }
+
+  .learn-card {
+    display: block;
+    padding: var(--space-2xl) var(--space-2xl);
+    background: var(--color-cream);
+    border: 1px solid var(--color-border);
+    text-decoration: none;
+    transition: all var(--duration-normal) var(--ease-out);
+  }
+
+  .learn-card:hover {
+    box-shadow: var(--shadow-md);
+    background: white;
+  }
+
+  .learn-card__category {
+    font-family: var(--font-heading);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-text-light);
+    margin-bottom: var(--space-md);
+    display: block;
+  }
+
+  .learn-card__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-lg);
+    line-height: 1.2;
+  }
+
+  .learn-card__excerpt {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+    letter-spacing: 0.3px;
+  }
+
+  /* ============================================
+     SECTION DIVIDERS
+     ============================================ */
+
+  .section-divider {
+    border: none;
+    border-top: 1px solid var(--color-border);
+    margin: var(--space-3xl) 0;
+    height: 0;
+  }
+
+  /* ============================================
+     VIEW ALL LINKS
+     ============================================ */
+
+  .view-all-link {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-charcoal);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    padding: var(--space-md) 0;
+    border-bottom: 1px solid var(--color-charcoal);
+    transition: all var(--duration-normal) var(--ease-out);
+  }
+
+  .view-all-link:hover {
+    color: var(--color-saffron);
+    border-bottom-color: var(--color-saffron);
+  }
+
+  /* ============================================
+     PURVX SECTION
+     ============================================ */
+
+  .purvx-section {
+    background: var(--color-cream);
+    padding-top: var(--space-4xl);
+    padding-bottom: var(--space-4xl);
+  }
+
+  /* ============================================
+     EXPLORE FOOTER
+     ============================================ */
+
+  .explore-footer {
+    text-align: center;
+    padding: var(--space-2xl) 0;
+  }
+
+  .explore-link {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-charcoal);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    position: relative;
+    transition: all var(--duration-normal) var(--ease-out);
+  }
+
+  .explore-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--color-charcoal);
+    transition: all var(--duration-normal) var(--ease-out);
+  }
+
+  .explore-link:hover {
     color: var(--color-saffron);
   }
 
-  .category-tile--wedding .category-tile__icon { color: var(--color-deep-burgundy); }
-  .category-tile--buy .category-tile__icon { color: var(--color-gold); }
-  .category-tile--sell .category-tile__icon { color: var(--color-saffron); }
-  .category-tile--learn .category-tile__icon { color: var(--color-medium-brown); }
-
-  .category-tile__title {
-    font-size: 1.1rem;
-    margin-bottom: var(--space-sm);
-    color: var(--color-charcoal);
+  .explore-link:hover::after {
+    background: var(--color-saffron);
   }
 
-  .category-tile__text {
-    font-size: 0.88rem;
-    color: var(--color-text-secondary);
-    line-height: 1.5;
-  }
+  /* ============================================
+     RESPONSIVE ADJUSTMENTS
+     ============================================ */
 
   @media (max-width: 1024px) {
-    .categories-grid {
-      grid-template-columns: repeat(2, 1fr);
+    .wedding-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .wedding-side {
+      flex-direction: row;
+    }
+
+    .card--compact {
+      flex: 1;
+    }
+
+    .learn-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .category-strip {
+      gap: var(--space-xl);
     }
   }
 
-  @media (max-width: 480px) {
-    .categories-grid {
-      grid-template-columns: 1fr;
+  @media (max-width: 640px) {
+    .hero {
+      min-height: 400px;
+    }
+
+    .hero__headline {
+      font-size: clamp(2rem, 6vw, 3rem);
+    }
+
+    .category-strip {
+      flex-direction: column;
+      gap: var(--space-lg);
+    }
+
+    .wedding-side {
+      flex-direction: column;
+    }
+
+    .section-divider {
+      margin: var(--space-2xl) 0;
     }
   }
 </style>

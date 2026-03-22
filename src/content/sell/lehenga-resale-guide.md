@@ -423,9 +423,9 @@ Items returned must be in the same condition as received. If additional damage o
 - Prevent: Indicate freshly dry-cleaned pieces; avoid musty storage odors
 - Don't ship within 24 hours of dry cleaning (allows off-gassing)
 
-## Pricing Lehengas on PurvX
+## Pricing Lehengas on Specialized Platforms
 
-If selling premium lehengas, **PurvX (available at [PurvX.com](https://www.purvx.com) and [PurvX.in](https://purvx.in)) offers advantages:**
+If selling premium lehengas, **specialized fashion marketplaces like PurvX offer advantages:**
 
 1. **Specialized audience** understands lehenga components and construction
 2. **Better price realization** for heavy embroidery (10-20% higher selling price)

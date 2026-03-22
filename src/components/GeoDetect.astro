@@ -1,0 +1,70 @@
+---
+/**
+ * GeoDetect Component
+ * Detects user's country on page load and stores in window + localStorage
+ * Dispatches a custom event for other components to listen to
+ */
+---
+
+<script is:inline>
+  /**
+   * Detects user's country using multiple methods
+   * Priority: Cloudflare cf-ipcountry header > browser language hints > default to US
+   */
+  async function detectCountry() {
+    let countryCode = 'US'; // default fallback
+
+    // Method 1: Check Cloudflare trace endpoint for cf-ipcountry header
+    try {
+      const response = await fetch('/cdn-cgi/trace', {
+        method: 'GET',
+      });
+
+      if (response.ok) {
+        const text = await response.text();
+        const lines = text.split('\n');
+        for (const line of lines) {
+          if (line.startsWith('cf=')) {
+            const cfCountry = line.split('=')[1]?.trim();
+            if (cfCountry && cfCountry.length === 2) {
+              countryCode = cfCountry.toUpperCase();
+              break;
+            }
+          }
+        }
+      }
+    } catch (error) {
+      console.debug('[GeoDetect] Cloudflare trace endpoint unavailable:', error.message);
+    }
+
+    // Method 2: Fallback to browser language hints
+    if (countryCode === 'US' && navigator.language) {
+      const lang = navigator.language.toLowerCase();
+      if (lang.includes('hi-in') || lang.includes('en-in')) {
+        countryCode = 'IN';
+      }
+    }
+
+    // Store in multiple places for accessibility
+    window.__userCountry = countryCode;
+    localStorage.setItem('sa_country', countryCode);
+
+    // Dispatch custom event for listening components
+    const event = new CustomEvent('geo:detected', {
+      detail: { country: countryCode },
+      bubbles: true,
+      cancelable: false,
+    });
+    document.dispatchEvent(event);
+
+    return countryCode;
+  }
+
+  // Run on DOMContentLoaded for optimal timing
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', detectCountry);
+  } else {
+    // If script runs after DOMContentLoaded
+    detectCountry();
+  }
+</script>

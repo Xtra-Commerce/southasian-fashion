@@ -73,13 +73,13 @@ Standard dress sizes don't translate to Anarkali measurements. Provide sellers t
 
 ### Customization as Your Safety Net
 
-Most reputable Anarkali sellers offer customization for ₹2,000-4,000 additional cost. Custom Anarkalis:
+Most reputable Anarkali sellers offer customization for $24-48 additional cost. Custom Anarkalis:
 - Are made-to-measure for your specific proportions
 - Take 3-4 weeks longer for delivery
 - Eliminate fitting risks
 - Represent better value for expensive pieces
 
-For Anarkalis above ₹10,000, customization is worthwhile.
+For Anarkalis above $120, customization is worthwhile.
 
 ## Fabric Selection: Balancing Drama and Wearability
 
@@ -113,12 +113,12 @@ Anarkali fabric must support the dramatic silhouette while remaining comfortable
 
 | Fabric Type | Best For | Weight | Drape | Price | Care |
 |---|---|---|---|---|---|
-| **Pure Silk** | Formal, wedding | Heavy | Excellent | ₹20,000-40,000+ | Professional cleaning |
-| **Silk Blends (70%+)** | Party, formal | Medium-heavy | Very good | ₹12,000-25,000 | Professional cleaning |
-| **Dupion Silk** | Party, celebrations | Medium-heavy | Good | ₹10,000-20,000 | Professional cleaning |
-| **Cotton-Silk (50-50)** | Casual-party, summer | Light-medium | Good | ₹6,000-12,000 | Hand wash or dry clean |
-| **Pure Cotton** | Casual, everyday | Light | Good | ₹3,000-8,000 | Hand wash |
-| **Cotton-Poly Blends** | Casual wear | Light | Good | ₹2,500-6,000 | Machine wash friendly |
+| **Pure Silk** | Formal, wedding | Heavy | Excellent | $240-480+ | Professional cleaning |
+| **Silk Blends (70%+)** | Party, formal | Medium-heavy | Very good | $145-300 | Professional cleaning |
+| **Dupion Silk** | Party, celebrations | Medium-heavy | Good | $120-240 | Professional cleaning |
+| **Cotton-Silk (50-50)** | Casual-party, summer | Light-medium | Good | $72-145 | Hand wash or dry clean |
+| **Pure Cotton** | Casual, everyday | Light | Good | $36-100 | Hand wash |
+| **Cotton-Poly Blends** | Casual wear | Light | Good | $30-72 | Machine wash friendly |
 
 ## Embellishment: Understanding Quality Tiers
 
@@ -274,13 +274,13 @@ Many sellers offer coordinate pieces, sometimes as packages providing better ove
 
 | Category | Price Range | Typical Features | Best For |
 |---|---|---|---|
-| **Budget Casual** | ₹2,500-5,000 | Cotton or blends, simple design, basic quality | Festival wear, casual celebrations |
-| **Casual-Party** | ₹5,000-10,000 | Cotton-silk blends, moderate embroidery, good quality | Family events, semi-formal occasions |
-| **Party/Formal** | ₹10,000-20,000 | Silk blends, quality embroidery, excellent construction | Celebrations, formal events |
-| **Premium/Wedding** | ₹20,000-40,000 | Pure silk or premium blends, hand embroidery, custom options | Weddings, significant occasions |
-| **Luxury Custom** | ₹40,000+ | Designer construction, bespoke customization, premium materials | High-profile events, investment pieces |
+| **Budget Casual** | $30-60 | Cotton or blends, simple design, basic quality | Festival wear, casual celebrations |
+| **Casual-Party** | $60-120 | Cotton-silk blends, moderate embroidery, good quality | Family events, semi-formal occasions |
+| **Party/Formal** | $120-240 | Silk blends, quality embroidery, excellent construction | Celebrations, formal events |
+| **Premium/Wedding** | $240-480 | Pure silk or premium blends, hand embroidery, custom options | Weddings, significant occasions |
+| **Luxury Custom** | $480+ | Designer construction, bespoke customization, premium materials | High-profile events, investment pieces |
 
-**Value assessment**: A ₹7,000 Anarkali should feature cotton-silk blend content, quality embroidery (if any), reinforced seams, and reliable sizing. Below ₹4,000, expect simpler construction and synthetic blends. Above ₹15,000, hand embroidery and premium silk content should justify pricing.
+**Value assessment**: An $85 Anarkali should feature cotton-silk blend content, quality embroidery (if any), reinforced seams, and reliable sizing. Below $48, expect simpler construction and synthetic blends. Above $180, hand embroidery and premium silk content should justify pricing.
 
 ## Pre-Purchase Questions for Sellers
 
@@ -323,9 +323,9 @@ Successful Anarkali purchases follow this strategy:
 6. **Ask clarifying questions** about all aspects above
 7. **Verify color accuracy** through natural-lighting photos if possible
 8. **Confirm return policies** explicitly address fit concerns
-9. **Consider customization** for pieces above ₹10,000
+9. **Consider customization** for pieces above $120
 10. **Use secure payment** with buyer protection
 
 A well-chosen Anarkali suit becomes a treasured wardrobe piece worn repeatedly across celebrations and special occasions.
 
-Explore elegant Anarkali collections on [PurvX.com](https://PurvX.com) for global selections or [PurvX.in](https://PurvX.in) for India-specific designs with verified sizing and authentic craftsmanship.
+Explore elegant Anarkali collections on marketplaces like PurvX for global selections and India-specific designs with verified sizing and authentic craftsmanship.

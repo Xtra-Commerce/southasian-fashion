@@ -1,6 +1,8 @@
 ---
 import { footerNav } from '../data/navigation';
+import GeoLink from './GeoLink.astro';
 ---
+
 <footer class="footer">
   <div class="footer__inner container">
     <div class="footer__top">
@@ -10,13 +12,6 @@ import { footerNav } from '../data/navigation';
           <span class="footer__logo-text">SouthAsian<span class="footer__logo-dot">.</span>Fashion</span>
         </a>
         <p class="footer__tagline">Expert guides for buying, wearing, and selling South Asian fashion worldwide.</p>
-        <div class="footer__purvx">
-          <p class="footer__purvx-label">Shop South Asian Fashion</p>
-          <div class="footer__purvx-links">
-            <a href="https://www.purvx.com/s" target="_blank" rel="noopener" class="btn btn--outline btn--sm">PurvX.com (Global)</a>
-            <a href="https://purvx.in/collections/all" target="_blank" rel="noopener" class="btn btn--outline btn--sm">PurvX.in (India)</a>
-          </div>
-        </div>
       </div>
 
       <div class="footer__links-grid">
@@ -42,8 +37,9 @@ import { footerNav } from '../data/navigation';
     </div>
 
     <div class="footer__bottom">
-      <p class="footer__copy">&copy; {new Date().getFullYear()} SouthAsian.Fashion. Part of the <a href="https://www.purvx.com" target="_blank" rel="noopener">PurvX</a> network.</p>
-      <p class="footer__legal">PurvX.com is a U.S.-registered C-Corporation. PurvX.in operates as a separate India entity.</p>
+      <p class="footer__copy">
+        &copy; {new Date().getFullYear()} SouthAsian.Fashion. In partnership with <GeoLink globalHref="https://www.purvx.com" indiaHref="https://purvx.in" class="footer__partnership-link">PurvX</GeoLink>.
+      </p>
     </div>
   </div>
 </footer>
@@ -105,35 +101,6 @@ import { footerNav } from '../data/navigation';
     max-width: 320px;
   }
 
-  .footer__purvx-label {
-    font-family: var(--font-heading);
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--color-gold);
-    margin-bottom: var(--space-sm);
-  }
-
-  .footer__purvx-links {
-    display: flex;
-    gap: var(--space-sm);
-    flex-wrap: wrap;
-  }
-
-  .footer__purvx-links .btn--outline {
-    border-color: rgba(255,255,255,0.3);
-    color: white;
-    font-size: 0.75rem;
-    padding: 0.45rem 1rem;
-  }
-
-  .footer__purvx-links .btn--outline:hover {
-    background: white;
-    color: var(--color-charcoal);
-    border-color: white;
-  }
-
   .footer__links-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -171,17 +138,16 @@ import { footerNav } from '../data/navigation';
   .footer__copy {
     font-size: 0.82rem;
     color: rgba(255,255,255,0.4);
-    margin-bottom: var(--space-xs);
   }
 
-  .footer__copy a {
+  .footer__partnership-link {
     color: var(--color-saffron-light);
     text-decoration: none;
+    transition: color var(--duration-fast);
   }
 
-  .footer__legal {
-    font-size: 0.75rem;
-    color: rgba(255,255,255,0.25);
+  .footer__partnership-link:hover {
+    color: white;
   }
 
   @media (max-width: 768px) {

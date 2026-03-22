@@ -8,186 +8,186 @@
   },
   "homepageHero": { "id": 36098416, "alt": "South Asian wedding celebration" },
   "articles": {
-    "what-to-wear-indian-wedding-guest": { "id": 36098389, "alt": "Guests at an Indian wedding celebration" },
-    "indian-wedding-complete-guide": { "id": 4105332, "alt": "Indian wedding ceremony" },
-    "indian-bridal-outfit-guide": { "id": 36102606, "alt": "Indian bridal outfit" },
-    "indian-wedding-events-explained": { "id": 36248942, "alt": "Indian wedding event celebration" },
-    "sangeet-outfit-guide": { "id": 7669989, "alt": "Sangeet night celebration and dance" },
-    "mehndi-outfit-ideas": { "id": 2643556, "alt": "Mehndi henna ceremony" },
-    "indian-wedding-guest-men": { "id": 2060241, "alt": "Men in Indian wedding attire" },
-    "south-asian-wedding-budget-guide": { "id": 5747219, "alt": "South Asian wedding preparations" },
-    "best-lehenga-online": { "id": 36430692, "alt": "Elegant lehenga outfit" },
-    "best-saree-online": { "id": 36226633, "alt": "Beautiful silk saree draped elegantly" },
-    "best-sherwani-online": { "id": 7685575, "alt": "Sherwani outfit for men" },
-    "best-kurta-pajama-online": { "id": 5938772, "alt": "Kurta pajama outfit" },
-    "best-anarkali-suit-online": { "id": 36041215, "alt": "Anarkali suit in rich fabric" },
-    "best-salwar-kameez-online": { "id": 36194198, "alt": "Salwar kameez ensemble" },
-    "affordable-indian-outfits-guide": { "id": 4048041, "alt": "South Asian fashion shopping" },
-    "preowned-south-asian-fashion-guide": { "id": 6382266, "alt": "Preowned designer outfits" },
-    "how-to-sell-indian-clothes-online": { "id": 5865762, "alt": "Fashion items prepared for sale" },
-    "indian-outfit-resale-value-guide": { "id": 5447529, "alt": "Luxury South Asian garments" },
-    "lehenga-resale-guide": { "id": 7578483, "alt": "Designer lehenga close-up" },
-    "saree-resale-guide": { "id": 7319414, "alt": "Silk saree fabric detail" },
-    "sell-wedding-outfit-after-use": { "id": 6145287, "alt": "Wedding outfit after ceremony" },
-    "best-platforms-sell-indian-clothes": { "id": 6458310, "alt": "Online fashion marketplace" },
-    "south-asian-fabric-guide": { "id": 4428288, "alt": "South Asian fabric textures and weaves" },
-    "indian-embroidery-types-guide": { "id": 2581260, "alt": "Detailed Indian embroidery work" },
-    "regional-indian-fashion-styles": { "id": 6842755, "alt": "Regional Indian fashion variety" },
-    "south-asian-color-symbolism": { "id": 2477363, "alt": "Colorful South Asian fabrics" },
-    "history-of-the-saree": { "id": 1846014, "alt": "Traditional saree draping" },
-    "indian-wedding-jewelry-guide": { "id": 5043048, "alt": "Indian wedding jewelry collection" },
-    "sustainable-south-asian-fashion": { "id": 6167463, "alt": "Sustainable fashion and textiles" },
-    "south-asian-fashion-glossary": { "id": 7176417, "alt": "South Asian fashion terms and garments" },
-    "saree-vs-lehenga": { "id": 36194193, "alt": "Saree and lehenga comparison" },
-    "designer-vs-non-designer-indian-outfits": { "id": 6986012, "alt": "Designer versus standard Indian outfits" },
-    "buying-new-vs-preowned-indian-outfits": { "id": 5377395, "alt": "New and preowned fashion comparison" },
-    "online-vs-in-store-indian-fashion": { "id": 4427642, "alt": "Fashion shopping experience" }
+    "what-to-wear-indian-wedding-guest": { "id": 2477363, "alt": "Colorful South Asian outfits and fabrics for wedding guests" },
+    "indian-wedding-complete-guide": { "id": 4105332, "alt": "Indian wedding ceremony with mandap and decorations" },
+    "indian-bridal-outfit-guide": { "id": 36102606, "alt": "Indian bridal outfit with heavy embroidery and gold work" },
+    "indian-wedding-events-explained": { "id": 36248942, "alt": "Indian wedding celebration with guests and decorations" },
+    "sangeet-outfit-guide": { "id": 7669989, "alt": "Sangeet night celebration with colorful outfits and dancing" },
+    "mehndi-outfit-ideas": { "id": 2643556, "alt": "Mehndi henna ceremony with intricate designs" },
+    "indian-wedding-guest-men": { "id": 7685575, "alt": "Men in traditional sherwani with embroidery" },
+    "south-asian-wedding-budget-guide": { "id": 4048041, "alt": "South Asian fashion shopping and selection process" },
+    "best-lehenga-online": { "id": 36430692, "alt": "Elegant lehenga with heavy embroidery and rich fabric" },
+    "best-saree-online": { "id": 36226633, "alt": "Beautiful silk saree with gold border draped elegantly" },
+    "best-sherwani-online": { "id": 7685575, "alt": "Sherwani outfit with intricate embroidery for men" },
+    "best-kurta-pajama-online": { "id": 5938772, "alt": "Kurta pajama set in traditional style" },
+    "best-anarkali-suit-online": { "id": 36041215, "alt": "Anarkali suit in jewel tones with embellishments" },
+    "best-salwar-kameez-online": { "id": 36194198, "alt": "Salwar kameez ensemble with dupatta" },
+    "affordable-indian-outfits-guide": { "id": 4048041, "alt": "Shopping for affordable South Asian fashion options" },
+    "preowned-south-asian-fashion-guide": { "id": 6382266, "alt": "Preowned designer South Asian outfits" },
+    "how-to-sell-indian-clothes-online": { "id": 5865762, "alt": "Fashion items professionally arranged and prepared for sale" },
+    "indian-outfit-resale-value-guide": { "id": 5447529, "alt": "Luxury South Asian garments ready for resale" },
+    "lehenga-resale-guide": { "id": 7578483, "alt": "Designer lehenga with detailed embroidery close-up" },
+    "saree-resale-guide": { "id": 7319414, "alt": "Silk saree fabric showing fine weave and detail" },
+    "sell-wedding-outfit-after-use": { "id": 6145287, "alt": "Wedding outfit after ceremony ready for resale" },
+    "best-platforms-sell-indian-clothes": { "id": 6458310, "alt": "Online fashion marketplace listing interface" },
+    "south-asian-fabric-guide": { "id": 4428288, "alt": "South Asian textile variety showing different fabric textures and weaves" },
+    "indian-embroidery-types-guide": { "id": 2581260, "alt": "Detailed Indian embroidery work with metallic threads" },
+    "regional-indian-fashion-styles": { "id": 6842755, "alt": "Variety of regional Indian fashion styles and garments" },
+    "south-asian-color-symbolism": { "id": 36098389, "alt": "Wedding guests in colorful traditional outfits" },
+    "history-of-the-saree": { "id": 1846014, "alt": "Traditional saree draping and styling technique" },
+    "indian-wedding-jewelry-guide": { "id": 5043048, "alt": "Indian wedding jewelry collection and pieces" },
+    "sustainable-south-asian-fashion": { "id": 4428288, "alt": "South Asian textile manufacturing and traditional weaving" },
+    "south-asian-fashion-glossary": { "id": 6842755, "alt": "Array of traditional South Asian garments and styles" },
+    "saree-vs-lehenga": { "id": 36194193, "alt": "Saree and lehenga comparison showcasing both styles" },
+    "designer-vs-non-designer-indian-outfits": { "id": 6986012, "alt": "Range of designer and non-designer Indian outfits" },
+    "buying-new-vs-preowned-indian-outfits": { "id": 5377395, "alt": "New and preowned fashion options comparison" },
+    "online-vs-in-store-indian-fashion": { "id": 4427642, "alt": "Online and in-store fashion shopping experience" }
   },
   "inlineImages": {
     "indian-wedding-complete-guide": [
       [
-        { "id": 36248942, "alt": "Mehndi ceremony with henna designs", "caption": "The mehndi ceremony — an intimate pre-wedding celebration" },
-        { "id": 7669989, "alt": "Sangeet night dance celebration", "caption": "Sangeet night brings families together through music and dance" }
+        { "id": 36248942, "alt": "Bride with intricate mehndi henna designs on hands", "caption": "The mehndi ceremony — an intimate pre-wedding celebration" },
+        { "id": 7669989, "alt": "Guests dancing and celebrating at sangeet night", "caption": "Sangeet night brings families together through music and dance" }
       ],
       [
-        { "id": 36102606, "alt": "Indian bridal outfit in red and gold", "caption": "A traditional bridal look with heavy zardozi embroidery" }
+        { "id": 36102606, "alt": "Indian bride in red lehenga with heavy gold embroidery", "caption": "A traditional bridal look with heavy zardozi embroidery" }
       ],
       [
-        { "id": 2060241, "alt": "Groom in cream sherwani", "caption": "A classic sherwani for the groom" },
-        { "id": 36098389, "alt": "Wedding guests in colorful outfits", "caption": "Wedding guests dressed in vibrant silks and embroidered outfits" }
+        { "id": 2060241, "alt": "Groom wearing cream and gold embroidered sherwani", "caption": "A classic sherwani for the groom" },
+        { "id": 36098389, "alt": "Wedding guests in vibrant colorful traditional outfits", "caption": "Wedding guests dressed in vibrant silks and embroidered outfits" }
       ]
     ],
     "what-to-wear-indian-wedding-guest": [
       [
-        { "id": 36226633, "alt": "Elegant saree in rich silk", "caption": "A silk saree is always a safe and sophisticated choice for wedding guests" }
+        { "id": 36226633, "alt": "Elegant silk saree with gold border draped gracefully", "caption": "A silk saree is always a safe and sophisticated choice for wedding guests" }
       ],
       [
-        { "id": 36041215, "alt": "Anarkali suit in jewel tones", "caption": "Anarkali suits offer comfort and elegance for longer ceremonies" },
-        { "id": 36194198, "alt": "Salwar kameez with dupatta", "caption": "A beautifully embroidered salwar kameez" }
+        { "id": 36041215, "alt": "Anarkali suit in jewel tones with embellishments", "caption": "Anarkali suits offer comfort and elegance for longer ceremonies" },
+        { "id": 36194198, "alt": "Salwar kameez with dupatta in traditional style", "caption": "A beautifully embroidered salwar kameez" }
       ],
       [
-        { "id": 5938772, "alt": "Kurta pajama for men", "caption": "A well-fitted kurta pajama works for most wedding events" }
+        { "id": 5938772, "alt": "Well-fitted kurta pajama set for men", "caption": "A well-fitted kurta pajama works for most wedding events" }
       ]
     ],
     "indian-wedding-events-explained": [
       [
-        { "id": 2643556, "alt": "Henna being applied during mehndi", "caption": "Mehndi — the bride's hands are adorned with intricate henna patterns" }
+        { "id": 2643556, "alt": "Intricate henna patterns being applied to bride's hands during mehndi", "caption": "Mehndi — the bride's hands are adorned with intricate henna patterns" }
       ],
       [
-        { "id": 7669989, "alt": "Sangeet dance performance", "caption": "Sangeet — the musical night featuring choreographed dances" },
-        { "id": 5747219, "alt": "Haldi ceremony preparations", "caption": "Haldi — turmeric paste is applied for its auspicious symbolism" }
+        { "id": 7669989, "alt": "Family members dancing during sangeet night celebration", "caption": "Sangeet — the musical night featuring choreographed dances" },
+        { "id": 5747219, "alt": "Haldi ceremony with turmeric paste and celebrations", "caption": "Haldi — turmeric paste is applied for its auspicious symbolism" }
       ],
       [
-        { "id": 4105332, "alt": "Wedding ceremony with mandap", "caption": "The main ceremony takes place under a decorated mandap" }
+        { "id": 4105332, "alt": "Wedding ceremony mandap decorated with flowers and lights", "caption": "The main ceremony takes place under a decorated mandap" }
       ]
     ],
     "indian-bridal-outfit-guide": [
       [
-        { "id": 36430692, "alt": "Red bridal lehenga with gold work", "caption": "The classic red bridal lehenga remains the most popular choice" }
+        { "id": 36430692, "alt": "Red bridal lehenga with intricate gold zardozi embroidery", "caption": "The classic red bridal lehenga remains the most popular choice" }
       ],
       [
-        { "id": 36248951, "alt": "Pastel bridal lehenga", "caption": "Pastel hues have become increasingly popular among modern brides" },
-        { "id": 36194193, "alt": "Bridal saree option", "caption": "Many South Indian brides choose traditional Kanjivaram sarees" }
+        { "id": 36248951, "alt": "Pastel pink bridal lehenga with modern embellishments", "caption": "Pastel hues have become increasingly popular among modern brides" },
+        { "id": 36194193, "alt": "Traditional Kanjivaram bridal saree with gold work", "caption": "Many South Indian brides choose traditional Kanjivaram sarees" }
       ],
       [
-        { "id": 5043048, "alt": "Bridal jewelry set", "caption": "Statement jewelry completes the bridal look" }
+        { "id": 5043048, "alt": "Complete bridal jewelry set with necklace, earrings, and bangles", "caption": "Statement jewelry completes the bridal look" }
       ]
     ],
     "sangeet-outfit-guide": [
       [
-        { "id": 7669989, "alt": "Sangeet celebration with colorful outfits", "caption": "Sangeet outfits should allow for movement and dancing" }
+        { "id": 7669989, "alt": "Guests in colorful traditional outfits dancing at sangeet", "caption": "Sangeet outfits should allow for movement and dancing" }
       ],
       [
-        { "id": 36041215, "alt": "Embellished anarkali for sangeet", "caption": "An embellished anarkali catches the light beautifully" },
-        { "id": 36430692, "alt": "Light lehenga for sangeet", "caption": "A lighter lehenga works well for the dance-heavy evening" }
+        { "id": 36041215, "alt": "Embellished anarkali suit that catches light and shimmers", "caption": "An embellished anarkali catches the light beautifully" },
+        { "id": 36430692, "alt": "Lighter lehenga with embroidery suitable for dancing", "caption": "A lighter lehenga works well for the dance-heavy evening" }
       ]
     ],
     "mehndi-outfit-ideas": [
       [
-        { "id": 2643556, "alt": "Close-up of mehndi application", "caption": "Intricate henna patterns during the mehndi ceremony" }
+        { "id": 2643556, "alt": "Close-up of intricate henna mehndi patterns on hands", "caption": "Intricate henna patterns during the mehndi ceremony" }
       ],
       [
-        { "id": 2477363, "alt": "Yellow and green outfit fabrics", "caption": "Bright yellows and greens are traditional mehndi ceremony colors" },
-        { "id": 36194198, "alt": "Floral print salwar suit", "caption": "Floral prints and light embroidery suit the casual mehndi vibe" }
+        { "id": 2477363, "alt": "Bright yellow and green outfit fabrics typical for mehndi", "caption": "Bright yellows and greens are traditional mehndi ceremony colors" },
+        { "id": 36194198, "alt": "Floral print salwar kameez with light embroidery", "caption": "Floral prints and light embroidery suit the casual mehndi vibe" }
       ]
     ],
     "indian-wedding-guest-men": [
       [
-        { "id": 7685575, "alt": "Sherwani with embroidery", "caption": "A well-fitted sherwani is the gold standard for wedding ceremonies" }
+        { "id": 7685575, "alt": "Sherwani with intricate embroidery and gold detailing", "caption": "A well-fitted sherwani is the gold standard for wedding ceremonies" }
       ],
       [
-        { "id": 5938772, "alt": "Kurta pajama set", "caption": "A quality kurta pajama for pre-wedding events and receptions" },
-        { "id": 5365307, "alt": "Nehru jacket look", "caption": "A Nehru jacket layered over a kurta adds formality" }
+        { "id": 5938772, "alt": "Quality kurta pajama set in traditional colors", "caption": "A quality kurta pajama for pre-wedding events and receptions" },
+        { "id": 5365307, "alt": "Nehru jacket layered over kurta for formal styling", "caption": "A Nehru jacket layered over a kurta adds formality" }
       ]
     ],
     "best-lehenga-online": [
       [
-        { "id": 36430692, "alt": "Heavy bridal lehenga", "caption": "Bridal lehengas feature heavy embroidery and rich fabrics" }
+        { "id": 36430692, "alt": "Heavy bridal lehenga with intricate embroidery and rich fabric", "caption": "Bridal lehengas feature heavy embroidery and rich fabrics" }
       ],
       [
-        { "id": 36248951, "alt": "Party wear lehenga", "caption": "Party lehengas are lighter and more modern in design" },
-        { "id": 5721528, "alt": "Simple lehenga style", "caption": "Casual lehengas work well for smaller celebrations" }
+        { "id": 36248951, "alt": "Modern party wear lehenga with contemporary design", "caption": "Party lehengas are lighter and more modern in design" },
+        { "id": 5721528, "alt": "Simple and elegant casual lehenga style", "caption": "Casual lehengas work well for smaller celebrations" }
       ]
     ],
     "best-saree-online": [
       [
-        { "id": 36226633, "alt": "Banarasi silk saree", "caption": "Banarasi silk — the gold standard of Indian sarees" }
+        { "id": 36226633, "alt": "Banarasi silk saree with gold zari border and intricate weave", "caption": "Banarasi silk — the gold standard of Indian sarees" }
       ],
       [
-        { "id": 7319414, "alt": "Cotton saree drape", "caption": "Cotton sarees are perfect for everyday elegance and warmer weather" },
-        { "id": 36194198, "alt": "Designer saree with modern drape", "caption": "Contemporary designer sarees blend tradition with modern styling" }
+        { "id": 7319414, "alt": "Cotton saree draped elegantly showcasing hand weave", "caption": "Cotton sarees are perfect for everyday elegance and warmer weather" },
+        { "id": 36194198, "alt": "Contemporary designer saree with modern draping style", "caption": "Contemporary designer sarees blend tradition with modern styling" }
       ]
     ],
     "south-asian-fabric-guide": [
       [
-        { "id": 4428288, "alt": "Various fabric textures", "caption": "The richness of South Asian textiles — from silk to cotton to chiffon" }
+        { "id": 4428288, "alt": "Array of South Asian textile types showing different weaves and textures", "caption": "The richness of South Asian textiles — from silk to cotton to chiffon" }
       ],
       [
-        { "id": 2581260, "alt": "Detailed embroidery on fabric", "caption": "Hand embroidery adds value and character to every piece" },
-        { "id": 6842755, "alt": "Regional fabric varieties", "caption": "Each region of India produces distinctive textiles" }
+        { "id": 2581260, "alt": "Detailed hand embroidery work showing metallic thread and patterns", "caption": "Hand embroidery adds value and character to every piece" },
+        { "id": 6842755, "alt": "Various regional Indian fabric styles and designs", "caption": "Each region of India produces distinctive textiles" }
       ]
     ],
     "indian-embroidery-types-guide": [
       [
-        { "id": 2581260, "alt": "Intricate zardozi embroidery", "caption": "Zardozi — metallic thread embroidery that creates stunning dimensional designs" }
+        { "id": 2581260, "alt": "Intricate zardozi embroidery with metallic threads creating 3D effect", "caption": "Zardozi — metallic thread embroidery that creates stunning dimensional designs" }
       ],
       [
-        { "id": 4428288, "alt": "Chikankari embroidery on white fabric", "caption": "Lucknowi chikankari — delicate white-on-white threadwork" },
-        { "id": 7176417, "alt": "Colorful Phulkari embroidery", "caption": "Phulkari — vibrant floral embroidery from Punjab" }
+        { "id": 4428288, "alt": "Delicate chikankari white-on-white embroidery on fine fabric", "caption": "Lucknowi chikankari — delicate white-on-white threadwork" },
+        { "id": 7176417, "alt": "Colorful vibrant Phulkari floral embroidery pattern", "caption": "Phulkari — vibrant floral embroidery from Punjab" }
       ]
     ],
     "history-of-the-saree": [
       [
-        { "id": 1846014, "alt": "Traditional saree draping style", "caption": "The saree has been draped across South Asia for over 5,000 years" }
+        { "id": 1846014, "alt": "Traditional saree draping technique showcasing proper styling", "caption": "The saree has been draped across South Asia for over 5,000 years" }
       ],
       [
-        { "id": 36226633, "alt": "Silk saree with gold border", "caption": "Silk sarees with gold zari borders remain timeless classics" },
-        { "id": 7319414, "alt": "Cotton handloom saree", "caption": "Handloom cotton sarees reflect regional weaving traditions" }
+        { "id": 36226633, "alt": "Luxurious silk saree with intricate gold zari border", "caption": "Silk sarees with gold zari borders remain timeless classics" },
+        { "id": 7319414, "alt": "Handloom cotton saree with regional weaving patterns", "caption": "Handloom cotton sarees reflect regional weaving traditions" }
       ]
     ],
     "how-to-sell-indian-clothes-online": [
       [
-        { "id": 5865762, "alt": "Clothing items arranged for photography", "caption": "Good photography is the single most important factor in selling your outfits" }
+        { "id": 5865762, "alt": "Fashion items professionally arranged and lit for product photography", "caption": "Good photography is the single most important factor in selling your outfits" }
       ],
       [
-        { "id": 6458310, "alt": "Online listing on screen", "caption": "A well-written listing with accurate measurements attracts serious buyers" }
+        { "id": 6458310, "alt": "Online listing with detailed product description and measurements", "caption": "A well-written listing with accurate measurements attracts serious buyers" }
       ]
     ],
     "lehenga-resale-guide": [
       [
-        { "id": 7578483, "alt": "Lehenga detail showing embroidery", "caption": "Capturing detail shots of embroidery helps buyers assess quality" }
+        { "id": 7578483, "alt": "Close-up detail shot of lehenga embroidery and craftsmanship", "caption": "Capturing detail shots of embroidery helps buyers assess quality" }
       ],
       [
-        { "id": 36430692, "alt": "Full lehenga on display", "caption": "Show the full silhouette, separate components, and close-up details" }
+        { "id": 36430692, "alt": "Full lehenga displayed on mannequin showing complete outfit", "caption": "Show the full silhouette, separate components, and close-up details" }
       ]
     ],
     "saree-vs-lehenga": [
       [
-        { "id": 36194193, "alt": "Side-by-side saree and lehenga", "caption": "Both garments make stunning statements — the right choice depends on the occasion" }
+        { "id": 36194193, "alt": "Side-by-side comparison showing saree and lehenga styles", "caption": "Both garments make stunning statements — the right choice depends on the occasion" }
       ],
       [
-        { "id": 36226633, "alt": "Elegant saree draping", "caption": "Sarees offer timeless elegance and versatility" },
-        { "id": 36430692, "alt": "Lehenga in rich fabric", "caption": "Lehengas provide drama and grandeur for big celebrations" }
+        { "id": 36226633, "alt": "Elegant saree draped gracefully with classic styling", "caption": "Sarees offer timeless elegance and versatility" },
+        { "id": 36430692, "alt": "Lehenga in rich embroidered fabric with dramatic presentation", "caption": "Lehengas provide drama and grandeur for big celebrations" }
       ]
     ]
   },

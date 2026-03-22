@@ -1,0 +1,267 @@
+---
+/**
+ * PurvXListings Component
+ * Embeds live PurvX product listings via iframe with geo-detection
+ * Provides an editorial-style integration that feels native to the site
+ */
+
+interface Props {
+  category: 'lehenga' | 'saree' | 'sherwani' | 'bridal' | 'mens' | 'womens' | 'suit';
+  title?: string;
+  maxItems?: number;
+}
+
+const { category = 'womens', title, maxItems = 6 } = Astro.props;
+
+// Map categories to PurvX.com search URLs
+const categoryMap: Record<string, { us: string; india: string }> = {
+  lehenga: {
+    us: 'https://www.purvx.com/s?pub_categoryLevel1=womens&pub_categoryLevel2=lehengas',
+    india: 'https://purvx.in/collections/women'
+  },
+  saree: {
+    us: 'https://www.purvx.com/s?pub_categoryLevel1=womens&pub_categoryLevel2=sarees',
+    india: 'https://purvx.in/collections/women'
+  },
+  bridal: {
+    us: 'https://www.purvx.com/s?pub_categoryLevel1=womens&pub_categoryLevel2=bridal',
+    india: 'https://purvx.in/collections/women'
+  },
+  suit: {
+    us: 'https://www.purvx.com/s?pub_categoryLevel1=womens&pub_categoryLevel2=suit-sets',
+    india: 'https://purvx.in/collections/women'
+  },
+  sherwani: {
+    us: 'https://www.purvx.com/s?pub_categoryLevel1=mens',
+    india: 'https://purvx.in/collections/men'
+  },
+  mens: {
+    us: 'https://www.purvx.com/s?pub_categoryLevel1=mens',
+    india: 'https://purvx.in/collections/men'
+  },
+  womens: {
+    us: 'https://www.purvx.com/s?pub_categoryLevel1=womens',
+    india: 'https://purvx.in/collections/women'
+  }
+};
+
+// Get URLs for the selected category, or default to all PurvX
+const urls = categoryMap[category] || {
+  us: 'https://www.purvx.com/s',
+  india: 'https://purvx.in/collections/all'
+};
+
+// Generate a readable title if not provided
+const defaultTitles: Record<string, string> = {
+  lehenga: 'Explore Lehengas',
+  saree: 'Explore Sarees',
+  sherwani: 'Explore Sherwanis',
+  bridal: 'Explore Bridal Collections',
+  mens: 'Explore Men\'s Fashion',
+  womens: 'Explore Women\'s Fashion',
+  suit: 'Explore Suit Sets'
+};
+
+const displayTitle = title || defaultTitles[category] || 'Explore the Collection';
+---
+
+<section class="purvx-listings">
+  <div class="purvx-listings__container">
+    <div class="purvx-listings__header">
+      <span class="purvx-listings__label">SHOP THE EDIT</span>
+      <h2 class="purvx-listings__title">{displayTitle}</h2>
+    </div>
+
+    <div class="purvx-listings__frame-wrapper">
+      <iframe
+        class="purvx-listings__frame"
+        src={urls.us}
+        title={`Browse ${category} on PurvX`}
+        frameborder="0"
+        allow="payment"
+        data-geo-india={urls.india}
+      ></iframe>
+    </div>
+
+    <div class="purvx-listings__footer">
+      <a
+        href={urls.us}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="purvx-listings__link"
+      >
+        View full collection on PurvX →
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+  /**
+   * Handle geo-detection for iframe URL swapping
+   * Listens for geo:detected event and updates iframe src if in India
+   */
+  function handleGeoDetection() {
+    const frames = document.querySelectorAll('.purvx-listings__frame');
+
+    function updateFrames(country: string) {
+      frames.forEach(frame => {
+        const indiaUrl = frame.getAttribute('data-geo-india');
+        const currentSrc = frame.getAttribute('src');
+
+        if (country === 'IN' && indiaUrl && !currentSrc?.includes('purvx.in')) {
+          frame.setAttribute('src', indiaUrl);
+        } else if (country !== 'IN' && currentSrc?.includes('purvx.in')) {
+          // Reset to default if not in India
+          const defaultUrl = frame.getAttribute('data-default-src') ||
+            'https://www.purvx.com/s';
+          frame.setAttribute('src', defaultUrl);
+        }
+      });
+    }
+
+    // Check for pre-existing country detection from GeoDetect component
+    if (window.__userCountry) {
+      updateFrames(window.__userCountry);
+    }
+
+    // Listen for geo:detected event
+    document.addEventListener('geo:detected', (event: CustomEvent) => {
+      updateFrames(event.detail.country);
+    });
+
+    // Also check localStorage in case geo detection happened before script loaded
+    const storedCountry = localStorage.getItem('sa_country');
+    if (storedCountry) {
+      updateFrames(storedCountry);
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', handleGeoDetection);
+  } else {
+    handleGeoDetection();
+  }
+</script>
+
+<style>
+  .purvx-listings {
+    padding: var(--space-3xl) 0;
+    margin: var(--space-2xl) 0;
+    background: var(--color-warm-white);
+  }
+
+  .purvx-listings__container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--gutter);
+  }
+
+  .purvx-listings__header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+    padding-top: var(--space-xl);
+    border-top: 1px solid var(--color-border);
+  }
+
+  .purvx-listings__label {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    margin-bottom: var(--space-md);
+  }
+
+  .purvx-listings__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 400;
+    color: var(--color-charcoal);
+    letter-spacing: -0.01em;
+  }
+
+  .purvx-listings__frame-wrapper {
+    margin: var(--space-2xl) 0;
+    overflow: hidden;
+    background: var(--color-cream);
+    border: 1px solid var(--color-border);
+  }
+
+  .purvx-listings__frame {
+    width: 100%;
+    height: 600px;
+    border: none;
+    display: block;
+    overflow: hidden;
+  }
+
+  .purvx-listings__footer {
+    text-align: center;
+    padding: var(--space-xl) 0;
+  }
+
+  .purvx-listings__link {
+    display: inline-block;
+    font-family: var(--font-heading);
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--color-charcoal);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--color-border);
+    transition: all var(--duration-normal) var(--ease-out);
+  }
+
+  .purvx-listings__link:hover {
+    color: var(--color-saffron);
+    border-bottom-color: var(--color-saffron);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .purvx-listings {
+      padding: var(--space-2xl) 0;
+      margin: var(--space-xl) 0;
+    }
+
+    .purvx-listings__header {
+      padding-top: var(--space-lg);
+      margin-bottom: var(--space-xl);
+    }
+
+    .purvx-listings__frame {
+      height: 500px;
+    }
+
+    .purvx-listings__title {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .purvx-listings {
+      padding: var(--space-xl) 0;
+      margin: var(--space-lg) 0;
+    }
+
+    .purvx-listings__container {
+      padding: 0 var(--space-lg);
+    }
+
+    .purvx-listings__frame {
+      height: 450px;
+    }
+
+    .purvx-listings__title {
+      font-size: 1.25rem;
+    }
+
+    .purvx-listings__label {
+      font-size: 0.65rem;
+    }
+  }
+</style>

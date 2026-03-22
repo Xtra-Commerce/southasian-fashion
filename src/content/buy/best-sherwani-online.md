@@ -48,12 +48,12 @@ Sherwani fabric determines comfort, appearance, longevity, and appropriateness f
 
 | Fabric Type | Characteristics | Best For | Price Range | Care |
 |---|---|---|---|---|
-| **Pure Silk** | Lustrous, supple, flows beautifully | Wedding, premium occasions | ₹25,000-50,000+ | Professional cleaning |
-| **Silk Blends (80%+)** | Excellent drape, manageable care | Wedding, party wear | ₹15,000-30,000 | Professional cleaning |
-| **Dupion Silk** | Textured, dimensional, structured | All occasions | ₹12,000-25,000 | Professional cleaning |
-| **Cotton-Silk (50-50)** | Breathable, balanced formality | Summer, casual-formal | ₹8,000-15,000 | Hand or professional wash |
-| **Linen-Cotton** | Cool, natural, textured | Summer, casual | ₹6,000-12,000 | Hand wash/dry clean |
-| **Brocade** | Patterned, structured, ornate | Wedding, formal | ₹15,000-35,000 | Professional cleaning |
+| **Pure Silk** | Lustrous, supple, flows beautifully | Wedding, premium occasions | $300-600+ | Professional cleaning |
+| **Silk Blends (80%+)** | Excellent drape, manageable care | Wedding, party wear | $180-360 | Professional cleaning |
+| **Dupion Silk** | Textured, dimensional, structured | All occasions | $145-300 | Professional cleaning |
+| **Cotton-Silk (50-50)** | Breathable, balanced formality | Summer, casual-formal | $100-180 | Hand or professional wash |
+| **Linen-Cotton** | Cool, natural, textured | Summer, casual | $72-145 | Hand wash/dry clean |
+| **Brocade** | Patterned, structured, ornate | Wedding, formal | $180-420 | Professional cleaning |
 
 ## Fit and Sizing for Online Purchases
 
@@ -79,7 +79,7 @@ Sherwani fit differs fundamentally from western tailoring. These structured garm
 2. **Request detailed size charts** from sellers showing measurements for each size
 3. **Compare your measurements** to charts—don't assume standard sizing
 4. **Contact sellers** with questions about sizing or fit concerns
-5. **Seek customization options** if your measurements fall between sizes (most reputable sellers offer this for ₹2,000-5,000 additional)
+5. **Seek customization options** if your measurements fall between sizes (most reputable sellers offer this for $25-60 additional)
 6. **Review return policies** for fit issues specifically
 
 **Critical point**: Never assume sizes. A "Large" sherwani can vary 6+ inches between makers. Detailed measurement comparison prevents expensive returns.
@@ -157,7 +157,7 @@ Sherwani colors should be evaluated carefully when purchasing online, as photogr
 
 A complete sherwani look requires coordinating pieces.
 
-**Sherwani pants**: Should be tailored to fit precisely. These are typically off-white, cream, gold, or matching-color churidar (tapered) styles. Budget ₹2,000-4,000 for good-quality tailoring.
+**Sherwani pants**: Should be tailored to fit precisely. These are typically off-white, cream, gold, or matching-color churidar (tapered) styles. Budget $24-48 for good-quality tailoring.
 
 **Footwear**: Traditional mojris (embroidered leather slippers) or formal shoes. These should complement sherwani's embellishment style.
 
@@ -203,11 +203,11 @@ When selecting online, identify regional style that appeals to you, then seek se
 
 | Category | Price Range | Typical Features | Occasions |
 |---|---|---|---|
-| **Budget Party** | ₹5,000-10,000 | Cotton or cotton-silk blend, machine embroidery, basic tailoring | Casual-formal, office events |
-| **Mid-Range Party** | ₹10,000-20,000 | Silk blends, quality embroidery, good construction | Parties, celebrations, family events |
-| **Premium Party** | ₹20,000-35,000 | Pure silk or quality blends, hand-embroidery present, superior tailoring | Significant celebrations, formal events |
-| **Wedding Bridal** | ₹35,000-70,000 | Premium silk, extensive hand embroidery, customization, luxury construction | Weddings, major ceremonies |
-| **Luxury Custom** | ₹70,000+ | Designer construction, bespoke customization, premium materials throughout | High-profile events, signature pieces |
+| **Budget Party** | $60-120 | Cotton or cotton-silk blend, machine embroidery, basic tailoring | Casual-formal, office events |
+| **Mid-Range Party** | $120-240 | Silk blends, quality embroidery, good construction | Parties, celebrations, family events |
+| **Premium Party** | $240-420 | Pure silk or quality blends, hand-embroidery present, superior tailoring | Significant celebrations, formal events |
+| **Wedding Bridal** | $420-840 | Premium silk, extensive hand embroidery, customization, luxury construction | Weddings, major ceremonies |
+| **Luxury Custom** | $840+ | Designer construction, bespoke customization, premium materials throughout | High-profile events, signature pieces |
 
 ## Questions for Online Sellers
 
@@ -255,4 +255,4 @@ Sherwanis are significant purchases requiring careful selection. The most succes
 
 A well-chosen sherwani purchased from a knowledgeable seller becomes a wardrobe investment worn for decades, appearing in countless photos and celebrations.
 
-Explore premium sherwani collections on [PurvX.com](https://PurvX.com) for global options or [PurvX.in](https://PurvX.in) for India-specific selections with verified sizing and authentic craftsmanship.
+Explore premium sherwani collections on marketplaces like PurvX for global options and India-specific selections with verified sizing and authentic craftsmanship.

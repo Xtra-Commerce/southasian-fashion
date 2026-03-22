@@ -141,7 +141,7 @@ Assessing preowned condition requires systematic evaluation across multiple dime
 
 **Minor discoloration** (subtle yellow-toning, slight variations) is normal with preowned pieces and often resolves with professional cleaning. **Permanent stains** (dark spots immune to water or light) indicate cleaning failure and may require expensive restoration.
 
-**Tears or holes**: Examine seams, hems, and main fabric areas. Small pinhole-sized tears might result from pin storage (easy repair, ₹100-300). Large tears require professional repair (₹500-2,000+).
+**Tears or holes**: Examine seams, hems, and main fabric areas. Small pinhole-sized tears might result from pin storage (easy repair, $1-4). Large tears require professional repair ($6-24+).
 
 **Fabric weakness**: Gently feel fabric. Does it feel crisp and intact, or thin and fragile in areas? If you can notice weakness by feel, fabric has deteriorated significantly.
 
@@ -190,7 +190,7 @@ Embellishment (embroidery, beading, stoning, zari) accounts for significant cost
 
 **Seam integrity**:
 
-**Separation**: Are seams holding securely, or are they beginning to separate? Small separations (1-2 inches) are repairable for ₹200-500. Extensive separation suggests structural failure.
+**Separation**: Are seams holding securely, or are they beginning to separate? Small separations (1-2 inches) are repairable for $2-6. Extensive separation suggests structural failure.
 
 **Stress points**: Examine underarm seams, waist seams, and areas of movement stress. These wear first and indicate overall wear level.
 
@@ -200,7 +200,7 @@ Embellishment (embroidery, beading, stoning, zari) accounts for significant cost
 
 **Hem line**: Should be even and straight. Uneven hems indicate either careless original tailoring or deterioration.
 
-**Hem attachment**: Gently tug hem. Should be firmly attached. Loose hems (₹300-500 repair) are manageable; completely separated hems cost more and indicate rough wear.
+**Hem attachment**: Gently tug hem. Should be firmly attached. Loose hems ($4-6 repair) are manageable; completely separated hems cost more and indicate rough wear.
 
 **Hem fabric**: Examine hem edge. Should be finished (folded or bound), not raw and fraying.
 
@@ -229,6 +229,8 @@ Create a mental/written condition assessment:
 **Fair (2/5)**: Significant wear visible, stains requiring professional cleaning, possibly minor repairs needed. Pricing: 25-40% of retail.
 
 **Poor (1/5)**: Heavy wear, staining, possible structural issues. Pricing: Below 25% of retail, possibly not worth purchasing unless extremely inexpensive and you're purchasing specifically for repair/restoration project.
+
+Most preowned purchases should fall in the Excellent to Good range (ratings 4-3).
 
 Most preowned purchases should fall in the Excellent to Good range (ratings 4-3).
 
@@ -282,7 +284,7 @@ Most preowned pieces benefit from professional care before wearing.
 
 **Address odors**: Professional cleaning removes storage odors and mild mustiness.
 
-**Cost**: ₹500-1,500 depending on garment size and cleaning complexity.
+**Cost**: $6-18 depending on garment size and cleaning complexity.
 
 **Limitations**: Cannot remove set-in stains or restore severely yellowed or faded areas.
 
@@ -298,7 +300,7 @@ Most preowned pieces benefit from professional care before wearing.
 
 **Embellishment repair**: Professional bead or stone replacement.
 
-**Cost**: ₹1,500-5,000+ depending on restoration scope.
+**Cost**: $18-60+ depending on restoration scope.
 
 ### DIY Gentle Cleaning
 
@@ -338,11 +340,11 @@ Understanding pricing frameworks prevents overpaying.
 **Professional cleaning/repair cost**: Subtract anticipated restoration costs.
 
 **Example calculation**:
-Original retail: ₹15,000
+Original retail: $180
 Condition: Good (excellent piece with minor wear)
-Fair discount: 50% = ₹7,500
-Professional cleaning: ₹800
-Fair offer: ₹6,700
+Fair discount: 50% = $90
+Professional cleaning: $10
+Fair offer: $80
 
 ### Market-Specific Pricing
 
@@ -369,22 +371,22 @@ Fair offer: ₹6,700
 
 PurvX offers dedicated preowned marketplace sections specifically designed for South Asian fashion transactions.
 
-### PurvX Platform Advantages
+### Marketplace Platform Advantages
 
-**Ethnic wear specialization**: Unlike general marketplaces, PurvX focuses on South Asian fashion, ensuring:
+**Ethnic wear specialization**: Dedicated ethnic wear marketplaces focus on South Asian fashion, ensuring:
 - Vendors understand ethnic wear specifics
 - Buyers include knowledgeable South Asian fashion enthusiasts
 - Descriptions use appropriate terminology
 
-**Verification features**: PurvX provides:
+**Verification features**: Quality platforms provide:
 - Seller ratings specifically for preowned transactions
 - Detailed condition ratings and documentation
 - Photo quality standards ensuring clear assessment
 - Verified pricing guidelines
 
-**Authentication services**: Premium preowned pieces (high-value garments, designer brands) can be authenticated through PurvX services, providing confidence in significant purchases.
+**Authentication services**: Premium preowned pieces (high-value garments, designer brands) can be authenticated through marketplace services, providing confidence in significant purchases.
 
-**Buyer protection**: PurvX transactions include:
+**Buyer protection**: Quality platform transactions include:
 - Dispute resolution processes
 - Return policies addressing condition misrepresentation
 - Secure payment protecting both buyers and sellers
@@ -394,9 +396,9 @@ PurvX offers dedicated preowned marketplace sections specifically designed for S
 - Seller communication quality
 - Overall transaction satisfaction
 
-### Using PurvX for Preowned Shopping
+### Using Marketplaces for Preowned Shopping
 
-**Effective PurvX searches**:
+**Effective marketplace searches**:
 
 Use specific terminology for accurate results:
 - "Bridal lehenga preowned" rather than just "lehenga"
@@ -405,7 +407,7 @@ Use specific terminology for accurate results:
 
 **Requesting additional information**:
 
-PurvX allows messaging with sellers. Request:
+Quality marketplaces allow messaging with sellers. Request:
 - Detailed condition assessment using the framework provided in this guide
 - Additional photos from specific angles (close-ups of embellishment, fabric weave)
 - Exact measurements if fit is important
@@ -499,4 +501,4 @@ Before purchasing any preowned piece:
 
 The preowned South Asian fashion market offers exceptional value—beautiful, quality pieces at fractions of retail cost. Armed with comprehensive assessment frameworks and knowledge of where to source, you can build stunning collections at sustainable price points.
 
-Explore verified preowned South Asian fashion collections on [PurvX.in](https://PurvX.in) for India-specific selections and [PurvX.com](https://PurvX.com) for international options, with authenticated pieces, condition ratings, and buyer protection guarantees.
+Explore verified preowned South Asian fashion collections on dedicated marketplaces for India-specific selections and international options, with authenticated pieces, condition ratings, and buyer protection guarantees.

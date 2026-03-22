@@ -53,10 +53,10 @@ Sarees offer superior customization through draping techniques. If you struggle 
 
 | Price Range | Saree | Lehenga |
 |-------------|-------|---------|
-| Budget-Friendly | ₹500-₹2,000 | ₹1,500-₹4,000 |
-| Mid-Range | ₹2,000-₹8,000 | ₹4,000-₹12,000 |
-| Premium | ₹8,000-₹25,000+ | ₹12,000-₹35,000+ |
-| Luxury Designer | ₹25,000+ | ₹35,000+ |
+| Budget-Friendly | $6-$24 | $18-$48 |
+| Mid-Range | $24-$100 | $48-$145 |
+| Premium | $100-$300+ | $145-$420+ |
+| Luxury Designer | $300+ | $420+ |
 
 Cost varies significantly by fabric and embroidery. Silk sarees from South India and heavily embroidered lehengas command premium prices. However, you can find quality sarees at various price points more easily than lehengas, making sarees more budget-friendly overall.
 
@@ -129,6 +129,6 @@ The ideal approach is having both in your wardrobe. Start with a quality saree i
 
 ## Find Your Perfect Piece
 
-Whether you're drawn to the elegant versatility of a saree or the dramatic elegance of a lehenga, **PurvX** offers a carefully curated selection of both options. Browse verified sellers, compare prices, and make your choice with confidence. Discover your ideal South Asian outfit today.
+Whether you're drawn to the elegant versatility of a saree or the dramatic elegance of a lehenga, platforms like PurvX offer carefully curated selections of both options. Browse verified sellers, compare prices, and make your choice with confidence. Discover your ideal South Asian outfit today.
 
-**[Shop Sarees and Lehengas on PurvX](#)** | **[Start Exploring](#)**
+**[Shop Sarees and Lehengas](#)** | **[Start Exploring](#)**
